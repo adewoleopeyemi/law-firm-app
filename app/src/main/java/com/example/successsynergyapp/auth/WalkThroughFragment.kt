@@ -49,9 +49,9 @@ class WalkThroughFragment (var page: Int) : Fragment() {
         }
         else{
             binding.btnGetStarted.text = "FINISH"
-            binding.btnGetStarted.onClick { activity?.startActivity(Intent(context, LoginActivity::class.java)) }
+            binding.btnGetStarted.onClick { activity?.startActivity(Intent(context, UserTypeActivity::class.java)) }
             binding.btnSkip.visibility = GONE
         }
-        binding.btnSkip.onClick { activity?.startActivity(Intent(context, MainActivity::class.java)) }
+        binding.btnSkip.onClick { activity?.startActivity(Intent(context, UserTypeActivity::class.java)) }
     }
 }

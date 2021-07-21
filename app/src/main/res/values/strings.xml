@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Success Synergy App</string>
+    <string name="app_name">Success Synergy</string>
     <string name="t6_font_bold">fonts/googlesansbold.ttf</string>
     <string name="t6_font_semi_bold">fonts/googlesansMedium.ttf</string>
     <string name="t6_font_medium">fonts/googlesansMedium.ttf</string>
