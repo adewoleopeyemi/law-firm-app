@@ -3,8 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -51,12 +50,11 @@
             android:layout_below="@id/app_name">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLoginWithGoogle"
+                android:id="@+id/btn_user_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:background="@drawable/theme6_bg_button_round"
-                android:drawableStart="@drawable/theme6_ic_google"
                 android:drawablePadding="@dimen/_8sdp"
                 android:padding="@dimen/_12sdp"
                 android:text="Login or Sign Up as a user"
@@ -68,17 +66,25 @@
                 android:fontFamily="@font/aldrich"
                 app:backgroundTint="@color/T6White" />
 
-            <TextView
-                android:layout_width="wrap_content"
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/_8sdp"
-                android:text="@string/t6_or"
-                android:textColor="@color/T6White"
-                android:textSize="@dimen/t6_font_large" />
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/t6_or"
+                    android:textColor="@color/T6White"
+                    android:textSize="@dimen/t6_font_large"
+                    android:elevation="10dp"/>
+            </RelativeLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLoginWithApple"
+                android:id="@+id/btn_service_provider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
@@ -92,7 +98,7 @@
                 style="@style/Theme6MaterialButtonStyle"
                 android:fontFamily="@font/aldrich"
                 android:textAppearance="@style/Theme6FontMedium"
-                app:backgroundTint="@color/T6Black" />
+                app:backgroundTint="@color/purple_200" />
 
 
 
