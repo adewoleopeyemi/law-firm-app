@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Theme6TextInputStyle"
+
+
+            android:hint="@string/t6_name">
+
+            <EditText
+                style="@style/Theme6EditText"
+                android:fontFamily="@font/assistant_light"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/T6ViewColor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Theme6TextInputStyle"
+
+
+            android:hint="@string/t6_email">
+
+            <EditText
+                style="@style/Theme6EditText"
+                android:fontFamily="@font/assistant_light"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/T6ViewColor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Theme6TextInputStyle"
+            android:hint="@string/t6_password"
+
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/Theme6EditText"
+                android:fontFamily="@font/assistant_light"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/T6ViewColor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Theme6TextInputStyle"
+            android:hint="@string/t6_confirm_password"
+            android:background="@null"
+
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                style="@style/Theme6EditText"
+                android:fontFamily="@font/assistant_light"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/T6ViewColor" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_16sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:backgroundTint="#40000000"
+        style="@style/Theme6MaterialButtonStyle"
+        android:textAppearance="@style/Theme6FontMedium"
+        android:textSize="@dimen/t6_font_normal"
+        android:text="@string/t6_sign_up"
+        android:textAllCaps="false" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Success Synergy App</string>
+    <string name="t6_font_bold">fonts/googlesansbold.ttf</string>
+    <string name="t6_font_semi_bold">fonts/googlesansMedium.ttf</string>
+    <string name="t6_font_medium">fonts/googlesansMedium.ttf</string>
+    <string name="t6_font_regular">fonts/googlesansregular.ttf</string>
+
+    <string name="t6_hi_juila">Hi Juila!</string>
+    <string name="t6_you_are_in_54_king_ports">you are in 54 king ports</string>
+    <string name="t6_best_destination">Best Destination</string>
+    <string name="t6_get_started">Get Started</string>
+    <string name="t6_skip_for_now">Skip For Now</string>
+    <string name="t6_trip_go">lq.travel</string>
+    <string name="theme6_samplelong_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.dummy text of the printing and typesetting </string>
+    <string name="t6_hotels">Hotels</string>
+    <string name="t6_login">Login</string>
+    <string name="t6_search_nearby_destination">Search Nearby Destination</string>
+    <string name="t6_recent_search">Recent Search</string>
+    <string name="t6_clear_all">Clear all</string>
+    <string name="t6_popular_destination">Popular Destination</string>
+    <string name="t6_name">Name</string>
+    <string name="t6_confirm_password">Confirm Password</string>
+    <string name="t6_password">Password</string>
+    <string name="t6_email">Email</string>
+    <string name="t6_sign_up">Sign Up</string>
+    <string name="t6_address">Address</string>
+    <string name="t6_best_hotels">Best Hotels</string>
+    <string name="t6_see_all">see all</string>
+    <string name="t6_popular_hotels">Popular Hotels</string>
+    <string name="t6_baggar_fee_information">Baggar Fee Information</string>
+    <string name="baggar_fee_information">Baggar Fee Information</string>
+    <string name="t6_airline">Airline</string>
+    <string name="t6_emirates_airlines">Emirates Airlines</string>
+    <string name="t6_carry_on_bag">Carry on Bag</string>
+    <string name="t6_fee_free_up_to_15_kg">Fee free up to 15 kg</string>
+    <string name="t6__1st_bag">1st Bag</string>
+    <string name="t6__2nd_bag">2nd Bag</string>
+    <string name="t6_got_it">got it</string>
+    <string name="t6_forgot_password">Forgot Password?</string>
+    <string name="t6_login_with_google">Login with Google</string>
+    <string name="t6_login_with_facebook">Login with Facebook</string>
+    <string name="t6_login_with_apple">Login with Apple</string>
+    <string name="t6_or">or</string>
+    <string name="t6_select_rorm">Select Room</string>
+    <string name="t6_hotel_information">Hotel Information</string>
+    <string name="t6_1298_reviews">1298 Reviews</string>
+    <string name="t6_4_5_5_good">4.5/5 - Good</string>
+    <string name="t6__120">$120</string>
+    <string name="t6_breakfast">Breakfast</string>
+    <string name="t6_parking">Parking</string>
+    <string name="t6_per_night">Per Night</string>
+    <string name="t6_140">$140</string>
+    <string name="t6_description">Located in the famous and  and   bohemian neighbourhood of Santa Teresa, Sugar Loft is set in a building built in the 1930s and since then completely modernised.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

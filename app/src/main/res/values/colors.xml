@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="T6ColorPrimary">#2F95A1</color>
+    <color name="T6ColorPrimaryDark">#2F95A1</color>
+    <color name="T6ColorAccent">#2F95A1</color>
+    <color name="transparent">#00000000</color>
+    <color name="T6Black">@android:color/background_dark</color>
+    <color name="T6White">@android:color/background_light</color>
+    <color name="T6transparent">@android:color/transparent</color>
+    <color name="T6TextColorPrimary">@android:color/primary_text_light</color>
+    <color name="T6TextColorSecondary">@android:color/secondary_text_dark</color>
+    <color name="T6ViewColor">#DADADA</color>
+
+    <color name="T6Hotel">#F0F5F7</color>
+    <color name="T6Flight">#FFF4F4</color>
+    <color name="T6Food">#FFF6F1</color>
+    <color name="T6Event">#F3F1FA</color>
+    <color name="t6_fb_blue">#3B5998</color>
+    <color name="t6_black_trans">#56303030</color>
+</resources>

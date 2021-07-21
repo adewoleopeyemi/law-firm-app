@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="t6_font_xxxlarge">30sp</dimen>
+    <dimen name="t6_font_xxlarge">26sp</dimen>
+    <dimen name="t6_font_xlarge">22sp</dimen>
+    <dimen name="t6_font_large">18sp</dimen>
+    <dimen name="t6_font_normal">16sp</dimen>
+    <dimen name="t6_font_medium">14sp</dimen>
+    <dimen name="t6_font_small">12sp</dimen>
+</resources>
