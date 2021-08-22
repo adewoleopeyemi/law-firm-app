@@ -25,7 +25,7 @@ public class UserTypeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(UserTypeActivity.this, LoginActivity.class);
-                i.putExtra("for", "User");
+                i.putExtra("for", "ServiceProvider");
                 startActivity(i);
             }
         });
@@ -33,7 +33,7 @@ public class UserTypeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(UserTypeActivity.this, LoginActivity.class);
-                i.putExtra("for", "ServiceProvider");
+                i.putExtra("for", "User");
                 startActivity(i);
             }
         });

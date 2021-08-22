@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "423863668147",
+    "firebase_url": "https://sucessapp-dd1ed-default-rtdb.firebaseio.com",
+    "project_id": "sucessapp-dd1ed",
+    "storage_bucket": "sucessapp-dd1ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423863668147:android:f5b15914e6b69132394fc6",
+        "android_client_info": {
+          "package_name": "com.example.successsynergyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423863668147-mhsd50omdstvmti5noi1gefn812qaq8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw-YYpHdOTrv607dvdtqNgzGIINadh-Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423863668147-mhsd50omdstvmti5noi1gefn812qaq8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

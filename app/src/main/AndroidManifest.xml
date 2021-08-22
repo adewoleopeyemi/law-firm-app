@@ -2,19 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.successsynergyapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SuccessSynergyApp">
-        <activity android:name=".auth.UserTypeActivity"></activity>
-        <activity android:name=".auth.LoginActivity" />
-        <activity android:name=".auth.AuthActivity" />
+        android:theme="@style/Theme.SuccessSynergyApp"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".auth.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".dashboard.home.search.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".auth.UserTypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".auth.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".auth.AuthActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".auth.WalkThroughActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,5 +46,4 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>
