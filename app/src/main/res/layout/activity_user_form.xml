@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/Theme7_app_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Theme7_spacing_standard"
+            android:layout_marginEnd="@dimen/Theme7_spacing_standard_new"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Theme7_spacing_standard"
+                android:src="@drawable/theme7_ic_close" />
+
+            <SeekBar
+                android:id="@+id/sBar"
+                style="@style/Theme7RatingSeekBar"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:progressDrawable="@drawable/theme7_bg_seekbar"
+                android:progressTint="@color/Theme7_colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLblResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llTop"
+            android:layout_marginTop="@dimen/Theme7_spacing_standard"
+            android:gravity="center"
+            android:text="Form"
+            android:textStyle="bold"
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/Theme7_textColorPrimary"
+            android:textSize="@dimen/Theme7_font_size_xlarge"
+            android:visibility="gone" />
+
+        <com.yuyakaido.android.cardstackview.CardStackView
+            android:id="@+id/cardStackView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnMobile"
+            android:layout_below="@id/tvLblResult"
+            android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
+            android:layout_marginTop="@dimen/Theme7_spacing_xlarge"
+            android:layout_marginEnd="@dimen/Theme7_spacing_standard_new"
+            android:layout_marginBottom="@dimen/Theme7_spacing_xlarge"
+            android:clipToPadding="false"
+            android:padding="4dp" />
+
+
+        <FrameLayout
+            android:background="@drawable/theme7_bg_btn"
+            android:backgroundTint="@color/t12_colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/btnMobile"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            style="@style/Theme7Form_Card"
+            >
+            <RelativeLayout
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp">
+                <TextView
+                    style="@style/Theme7BtnLabel_Form"
+                    android:text="Continue"
+                    android:fontFamily="@font/basic"/>
+
+                <ImageView
+                    android:id="@+id/ivNext"
+                    style="@style/Theme7BtnImg_Form" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</layout>

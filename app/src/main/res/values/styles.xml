@@ -3,9 +3,11 @@
     <!-- Base application theme. -->
     <style name="Theme6AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/T6ColorPrimary</item>
-        <item name="colorPrimaryDark">@color/T6ColorPrimaryDark</item>
-        <item name="colorAccent">@color/T6ColorAccent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
     </style>
 
     <style name="Theme6AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -42,7 +44,7 @@
         <item name="android:layout_marginEnd">@dimen/_8sdp</item>
         <item name="android:layout_marginBottom">@dimen/_8sdp</item>
         <item name="android:background">@null</item>
-        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:paddingLeft">@dimen/_8sdp</item>
     </style>
     <style name="Theme6MaterialButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:textAllCaps">false</item>
@@ -56,6 +58,295 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+        <!-- Base application theme. -->
+        <!-- Base application theme. -->
+        <style name="T12AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/white</item>
+            <item name="colorPrimaryDark">@color/white</item>
+            <item name="colorAccent">@color/white</item>
+            <item name="android:statusBarColor">@color/white</item>
+            <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
+        </style>
+
+        <style name="T12AppThemeDark" parent="Theme.MaterialComponents.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/white</item>
+            <item name="colorPrimaryDark">@color/white</item>
+            <item name="colorAccent">@color/white</item>
+            <item name="android:statusBarColor">@color/white</item>
+            <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
+        </style>
+
+        <style name="T12AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+        <style name="T12AppTheme.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <item name="android:windowTranslucentStatus">true</item>
+            <item name="android:windowTranslucentNavigation">false</item>
+        </style>
+
+        <style name="T12AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+        <style name="T12FontMedium">
+            <item name="fontPath">@string/t12_font_medium</item>
+        </style>
+
+        <style name="T12FontSemiBold">
+            <item name="fontPath">@string/t12_font_semi_bold</item>
+        </style>
+
+        <style name="T12FontBold">
+            <item name="fontPath">@string/t12_font_bold</item>
+        </style>
+
+
+        <style name="T12EditTextStyle">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingStart">@dimen/t12_spacing_standard_new</item>
+            <item name="android:paddingEnd">@dimen/t12_spacing_control</item>
+            <item name="android:paddingTop">@dimen/t12_spacing_middle</item>
+            <item name="android:paddingBottom">@dimen/t12_spacing_middle</item>
+            <item name="android:textColor">@color/t12_textColorPrimary</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+            <item name="android:background">@drawable/t12_bg_edittext</item>
+            <item name="android:gravity">center_vertical</item>
+            <item name="android:singleLine">true</item>
+            <item name="android:layout_marginStart">@dimen/t12_spacing_standard_new</item>
+            <item name="android:layout_marginEnd">@dimen/t12_spacing_standard_new</item>
+        </style>
+        <style name="Theme12MaterialButton">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textAllCaps">false</item>
+            <item name="android:paddingTop">@dimen/t12_spacing_middle</item>
+            <item name="android:paddingBottom">@dimen/t12_spacing_middle</item>
+            <item name="android:paddingStart">@dimen/t12_spacing_standard</item>
+            <item name="android:paddingEnd">@dimen/t12_spacing_standard</item>
+            <item name="android:textColor">@color/t12_white</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+            <item name="android:layout_marginStart">@dimen/t12_spacing_standard_new</item>
+            <item name="android:layout_marginEnd">@dimen/t12_spacing_standard_new</item>
+            <item name="android:background">@drawable/t12_bg_btn</item>
+            <item name="fontPath">@string/t12_font_semi_bold</item>
+            <item name="android:gravity">center_horizontal</item>
+            <item name="android:shadowColor">@color/t12_colorPrimary</item>
+        </style>
+        <style name="T12Heading">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/t12_textColorPrimary</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+            <item name="android:singleLine">true</item>
+            <item name="fontPath">@string/t12_font_semi_bold</item>
+        </style>
+        <style name="T12OtherHeading">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/t12_textColorPrimary</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+            <item name="android:singleLine">true</item>
+        </style>
+        <style name="T12SubHeading">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/t12_textColorSecondary</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+        </style>
+        <style name="T12RecycleView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:overScrollMode">never</item>
+            <item name="android:paddingStart">@dimen/t12_spacing_standard</item>
+            <item name="android:paddingEnd">0dp</item>
+            <item name="android:clipToPadding">false</item>
+        </style>
+        <style name="T12SettingHeading">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textColor">@color/t12_textColorPrimary</item>
+            <item name="android:textSize">@dimen/t12_font_size_medium</item>
+            <item name="android:padding">@dimen/t12_spacing_standard_new</item>
+            <item name="android:textAllCaps">true</item>
+        </style>
+        <style name="T12ViewFilter">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">0.5dp</item>
+            <item name="android:background">@color/t12_view_color</item>
+            <item name="android:layout_marginStart">@dimen/t12_spacing_standard_new</item>
+            <item name="android:layout_marginEnd">@dimen/t12_spacing_standard_new</item>
+            <item name="android:layout_marginTop">@dimen/t12_spacing_standard_new</item>
+            <item name="android:layout_marginBottom">@dimen/t12_spacing_standard_new</item>
+        </style>
+
+    <style name="Theme3FontSemiBold">
+        <item name="fontPath">@string/theme3_font_semi_bold</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme11AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
+    </style>
+
+    <style name="Theme11AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
+    </style>
+
+    <style name="Theme11AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme11AppTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="Theme11AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Theme11FontMedium">
+    </style>
+
+    <style name="Theme11FontSemiBold">
+    </style>
+
+    <style name="Theme11FontBold">
+    </style>
+
+    <style name="Theme11MaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/theme11_font_size_normal</item>
+        <item name="android:paddingTop">@dimen/theme11_spacing_standard</item>
+        <item name="android:paddingBottom">@dimen/theme11_spacing_standard</item>
+        <item name="android:paddingStart">@dimen/theme11_spacing_standard</item>
+        <item name="android:paddingEnd">@dimen/theme11_spacing_standard</item>
+        <item name="android:theme">@style/Theme.MaterialComponents.Light</item>
+        <item name="cornerRadius">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Theme11MaterialButtonStyle.Filled">
+        <item name="backgroundTint">@color/t12_colorPrimary</item>
+        <item name="android:textColor">@color/theme11_white</item>
+        <item name="rippleColor">@color/theme11_white</item>
+    </style>
+
+    <style name="Theme1Theme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/t12_textColorSecondary</item>
+        <item name="android:textColorHint">@color/Theme1_textColorSecondary
+        </item>
+        <item name="android:fontFamily">@font/basic</item>
+    </style>
+
+    <style name="Theme11MaterialButtonStyle.Stroked">
+        <item name="backgroundTint">@color/theme11_textColorGrey</item>
+        <item name="strokeColor">@color/theme11_textColorGrey</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="android:textColor">@color/t12_colorPrimary</item>
+    </style>
+
+    <style name="Theme11EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/theme11_spacing_middle</item>
+        <item name="android:paddingBottom">@dimen/theme11_spacing_standard_new</item>
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+        <item name="android:backgroundTint">@color/t12_white</item>
+        <item name="android:textColor">@color/t12_textColorPrimary</item>
+        <item name="android:textSize">@dimen/theme11_font_size_normal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Theme11SettingText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme11_textColorPrimary</item>
+        <item name="android:textSize">@dimen/theme11_font_size_medium</item>
+    </style>
+   <style name="T11TextInputStyle" >
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:layout_marginTop">@dimen/theme11_spacing_standard</item>
+       <item name="android:layout_marginStart">@dimen/theme11_spacing_standard_new</item>
+       <item name="android:layout_marginEnd">@dimen/theme11_spacing_standard_new</item>
+       <item name="android:layout_marginBottom">@dimen/theme11_spacing_middle</item>
+       <item name="android:textColorHint">@color/t12_colorPrimary</item>
+   </style>
+    <style name="T11RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:overScrollMode">never</item>
+        <!--
+        <item name="android:layoutAnimation">@anim/theme11_item_anim_fall_down</item>
+-->
+    </style>
+
+    <style name="T11LyricsCollapsed">
+        <item name="android:textSize">@dimen/theme11_font_size_xlarge</item>
+        <item name="android:lineSpacingExtra">@dimen/theme11_spacing_standard</item>
+        <item name="android:alpha">0.2</item>
+        <item name="android:lines">4</item>
+    </style>
+
+    <style name="T11LyricsExpanded">
+        <item name="android:textSize">@dimen/theme11_font_size_xxlarge</item>
+        <item name="android:lineSpacingExtra">@dimen/theme11_spacing_standard</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="Theme11AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme7RatingSeekBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_6sdp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:enabled">false</item>
+        <item name="android:thumb">@null</item>
+    </style>
+
+    <style name="Theme7Form_Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20sdp</item>
+        <item name="android:layout_marginTop">@dimen/_60sdp</item>
+        <item name="android:layout_marginBottom">@dimen/Theme7_spacing_standard</item>
+    </style>
+
+    <style name="Theme7BtnLabel_Form">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/Theme7_white</item>
+        <item name="android:textSize">@dimen/Theme7_font_size_medium</item>
+    </style>
+
+    <style name="Theme7BtnImg_Form">
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginEnd">@dimen/Theme7_spacing_standard_new</item>
+        <item name="android:background">@drawable/theme7_bg_circle</item>
+        <item name="android:padding">@dimen/Theme7_spacing_control</item>
+        <item name="android:tint">@color/Theme7_white</item>
+        <item name="android:src">@drawable/theme7_ic_arrow_forward</item>
     </style>
 
 </resources>

@@ -221,7 +221,7 @@ fun Activity.lightStatusBar(statusBarColor: Int = -1) {
                 }
             }
         }
-        window.statusBarColor = if (statusBarColor == -1) Color.WHITE else statusBarColor
+        window.statusBarColor = if (statusBarColor == -1) Color.WHITE else Color.WHITE
     }
 }
 

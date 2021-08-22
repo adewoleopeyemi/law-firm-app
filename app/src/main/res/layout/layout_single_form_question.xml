@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        android:padding="@dimen/_16sdp"
+        android:background="@drawable/theme7_card_shadow">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/llAns"
+            android:gravity="center_vertical|center"
+            android:text="notification"
+            android:fontFamily="@font/aldrich"
+            android:textColor="@color/Theme7_textColorPrimary"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/llAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/et_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/basic"
+                android:textColor="@color/Theme7_textColorSecondary"
+                android:textSize="@dimen/Theme7_font_size_medium"
+                android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
+                android:layout_marginEnd="@dimen/Theme7_spacing_standard_new"
+                android:hint="@string/please_type_your_answers_here"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:padding="@dimen/Theme7_spacing_middle"
+                android:singleLine="false"
+                android:elevation="109dp"/>
+            <LinearLayout
+                android:id="@+id/llAns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/Theme7_spacing_middle">
+                <TextView
+                    android:id="@+id/tvA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:fontFamily="@font/basic"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvAns1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
+                    android:gravity="start"
+                    android:text="Please answer this"
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Theme7_spacing_middle"
+                android:padding="@dimen/Theme7_spacing_middle">
+
+                <TextView
+                    android:id="@+id/tvB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
+                    android:gravity="center"
+                    android:text="B"
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvAns2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
+                    android:gravity="start"
+                    android:text="Ten Steps"
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAns3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Theme7_spacing_middle"
+                android:padding="@dimen/Theme7_spacing_middle">
+
+                <TextView
+                    android:id="@+id/tvC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
+                    android:gravity="center"
+                    android:text="C"
+                    android:fontFamily="@font/basic"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+
+                <TextView
+                    android:id="@+id/tvAns3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
+                    android:gravity="start"
+                    android:text="Some question goes here"
+                    android:textColor="@color/Theme7_textColorSecondary"
+                    android:textSize="@dimen/Theme7_font_size_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

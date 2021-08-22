@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_200">#0A9DA3</color>
+    <color name="purple_500">#0A9DA3</color>
     <color name="purple_700">#000000</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="T6ColorPrimary">#2F95A1</color>
+    <color name="Theme3_colorPrimary">#fc4a1a</color>
+    <color name="Theme3_textColorSecondary">#9D9D9D</color>
+    <color name="Theme3_app_background">#f8f8f8</color>
     <color name="T6ColorPrimaryDark">#2F95A1</color>
     <color name="T6ColorAccent">#2F95A1</color>
+    <color name="colorPrimaryDark">@android:color/background_light</color>
     <color name="transparent">#00000000</color>
     <color name="T6Black">@android:color/background_dark</color>
     <color name="T6White">@android:color/background_light</color>
@@ -17,6 +21,8 @@
     <color name="T6TextColorPrimary">@android:color/primary_text_light</color>
     <color name="T6TextColorSecondary">@android:color/secondary_text_dark</color>
     <color name="T6ViewColor">#DADADA</color>
+    <color name="Theme1_textColorPrimary">#747474</color>
+    <color name="Theme1_textColorSecondary">#747474</color>
 
     <color name="T6Hotel">#F0F5F7</color>
     <color name="T6Flight">#FFF4F4</color>
@@ -24,4 +30,71 @@
     <color name="T6Event">#F3F1FA</color>
     <color name="t6_fb_blue">#3B5998</color>
     <color name="t6_black_trans">#56303030</color>
+    <color name="Theme3_textColorPrimary">#747474</color>
+    <color name="t12_colorPrimary">#0A9DA3</color>
+    <color name="t12_colorPrimaryDark">#0A9DA3</color>
+    <color name="t12_colorAccent">#0A9DA3</color>
+    <color name="t12_colorPrimary_light">#3E3A5BFB</color>
+    <color name="t12_textColorPrimary">#B2020005</color>
+    <color name="t12_textColorSecondary">#888888</color>
+    <color name="t12_textColorSecondary_blue">#86859B</color>
+    <color name="t12_textColorThird">#BABFB6</color>
+    <color name="t12_Grey">#E6E7E9</color>
+    <color name="t12_white">#FFFFFF</color>
+    <color name="t12_layout_background_white">#F6F7FA</color>
+    <color name="t12_view_color">#B4BBC2</color>
+    <color name="t12_blue_color">#15A9EB</color>
+    <color name="t12_dark_blue_color">#3D5895</color>
+    <color name="t12_edit_text_color">#EFF3F6</color>
+    <color name="t12_menu_background">#8BFFFFFF</color>
+
+    <color name="theme11_colorPrimary">#2B5266</color>
+    <color name="theme11_colorPrimaryDark">#2B5266</color>
+    <color name="theme11_colorAccent">#2B5266</color>
+    <color name="theme11_colorPrimary_light">#3E3A5BFB</color>
+    <color name="theme11_textColorPrimary">#130925</color>
+    <color name="theme11_textColorSecondary">#888888</color>
+    <color name="theme11_textColorSecondary_blue">#86859B</color>
+    <color name="theme11_textColorThird">#BABFB6</color>
+    <color name="theme11_textColorGrey">#B4BBC2</color>
+    <color name="theme11_white">#FFFFFF</color>
+    <color name="theme11_layout_background_white">#F6F7FA</color>
+    <color name="theme11_view_color">#B4BBC2</color>
+    <color name="theme11_blue_color">#3A5BFB</color>
+    <color name="color1_gradient">#F2F5F9</color>
+    <color name="color2_gradient">#B4C5D1</color>
+    <color name="colorprimary_alpha70">#5E2B5266</color>
+    <color name="colorprimary_light">#90A5B0</color>
+
+    <color name="Theme2_view_color">#DADADA</color>
+    <color name="Theme2_card_background">#FaFaFa</color>
+
+    <color name="theme7_colorPrimary">#5362FB</color>
+    <color name="Theme7_colorPrimaryDark">#3D50FC</color>
+    <color name="Theme7_colorAccent">#22D8CD</color>
+
+    <color name="Theme7_color_red">#F12727</color>
+    <color name="Theme7_textColorPrimary">#333333</color>
+    <color name="Theme7_textColorSecondary">#918F8F</color>
+
+    <color name="Theme7_app_background">#f3f5f9</color>
+    <color name="Theme7_view_color">#DADADA</color>
+
+    <color name="Theme7_white">#ffffff</color>
+
+    <color name="Theme7_icon_color">#747474</color>
+    <color name="Theme7_color_green">#8BC34A</color>
+    <color name="Theme7_edit_background">#F5F4F4</color>
+    <color name="Theme7_light_gray">#CECACA</color>
+    <color name="Theme7_colors_dots">#009688</color>
+
+    <color name="Theme7_green">#00FF00</color>
+    <color name="Theme7_red">#FF0000</color>
+    <color name="Theme7_color_setting">#ACB5FD</color>
+    <color name="Theme7_color_message">#5362FB</color>
+    <color name="Theme7_color_mail">#62D3AB</color>
+    <color name="Theme7_color_facebook">#4872FB</color>
+    <color name="Theme7_color_twitter">#2CB6F8</color>
+    <color name="Theme7_color_transparent">#00FFFFFF</color>
+
 </resources>

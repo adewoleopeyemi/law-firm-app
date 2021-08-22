@@ -1,5 +1,6 @@
 package com.example.successsynergyapp.auth
 
+import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.databinding.DataBindingUtil
 import com.example.successsynergyapp.MainActivity
@@ -26,7 +28,7 @@ class WalkThroughFragment (var page: Int) : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         activity?.makeTransparent(); activity?.makeNormalStatusBar(R.color.T6transparent); activity?.lightNavigation(); activity?.makeNormalNavigationBar()
-        binding.lblTripGo.text = "Success Synergy"
+        binding.lblTripGo.text = "My Lawyer App"
         when (page) {
             1 -> {
                 binding.txtWalkTitle.text = "Find experienced lawyers"
@@ -35,7 +37,7 @@ class WalkThroughFragment (var page: Int) : Fragment() {
             }
             2 -> {
                 binding.txtWalkTitle.text = "We offer you trusted and reliable services"
-                binding.txtWalkDesc.text = "If you are a legal solutions provider, we provide te clients. "
+                binding.txtWalkDesc.text = "If you are a legal solutions provider, we provide the clients. "
                 binding.ivBackgroundImage.setImageDrawable(activity?.getDrawable(R.drawable.law_preview_img))
             }
             3 -> {
@@ -49,9 +51,30 @@ class WalkThroughFragment (var page: Int) : Fragment() {
         }
         else{
             binding.btnGetStarted.text = "FINISH"
-            binding.btnGetStarted.onClick { activity?.startActivity(Intent(context, UserTypeActivity::class.java)) }
+            binding.btnGetStarted.onClick {
+                val sharedPrefs = activity?.getSharedPreferences("SuccessSynergy", Context.MODE_PRIVATE)
+                val hasLoggedIn = sharedPrefs?.getBoolean("HasLogggedIn", false)
+                if (hasLoggedIn!!){
+                    var i = Intent(context, MainActivity::class.java)
+                    var forWhat = sharedPrefs!!.getString("userType", "").toString()
+                    i.putExtra("for", forWhat)
+                    activity?.startActivity(i)
+                }
+                else{
+                    activity?.startActivity(Intent(context, UserTypeActivity::class.java))
+                }
+            }
             binding.btnSkip.visibility = GONE
         }
-        binding.btnSkip.onClick { activity?.startActivity(Intent(context, UserTypeActivity::class.java)) }
+        binding.btnSkip.onClick {
+            val sharedPrefs = activity?.getSharedPreferences("SuccessSynergy", Context.MODE_PRIVATE)
+            val hasLoggedIn = sharedPrefs?.getBoolean("HasLogggedIn", false)
+            if (hasLoggedIn!!){
+                activity?.startActivity(Intent(context, MainActivity::class.java))
+            }
+            else{
+                activity?.startActivity(Intent(context, UserTypeActivity::class.java))
+            }
+        }
     }
 }

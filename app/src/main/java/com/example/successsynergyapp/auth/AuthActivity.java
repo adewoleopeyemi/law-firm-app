@@ -1,10 +1,9 @@
 package com.example.successsynergyapp.auth;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import com.example.successsynergyapp.R;
+
 
 public class AuthActivity extends AppCompatActivity {
 

@@ -7,13 +7,14 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.successsynergyapp.R
 import com.example.successsynergyapp.databinding.ActivityWalkThroughBinding
+import com.example.successsynergyapp.utils.AllPermissionsUtils
 
 class WalkThroughActivity : Theme6BaseActivity() {
     lateinit var binding: ActivityWalkThroughBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_walk_through)
-
+        AllPermissionsUtils(this)
         val adapter = MyAdapter(supportFragmentManager, 2); binding.viewPager.adapter = adapter
     }
 

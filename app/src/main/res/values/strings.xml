@@ -163,4 +163,5 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem 
     <string name="complete_registration">Complete Registration</string>
     <string name="upload_your_picture">Upload your picture</string>
     <string name="address">Address</string>
+    <string name="please_type_your_answers_here">Please type your answers here</string>
 </resources>

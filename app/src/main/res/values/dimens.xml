@@ -7,4 +7,124 @@
     <dimen name="t6_font_normal">16sp</dimen>
     <dimen name="t6_font_medium">14sp</dimen>
     <dimen name="t6_font_small">12sp</dimen>
+    <dimen name="t12_font_size_nano">10sp</dimen>
+    <dimen name="t12_font_size_micro">12sp</dimen>
+    <dimen name="t12_font_size_small">14sp</dimen>
+    <dimen name="t12_font_size_medium">16sp</dimen>
+    <dimen name="t12_font_size_normal">18sp</dimen>
+    <dimen name="t12_font_size_large">20sp</dimen>
+    <dimen name="t12_font_size_xlarge">22sp</dimen>
+    <dimen name="t12_font_size_xxlarge">26sp</dimen>
+    <dimen name="t12_font_size_xxxlarge">30sp</dimen>
+    <dimen name="t12_font_size_splash">40sp</dimen>
+
+    <dimen name="t12_spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="t12_spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="t12_spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="t12_spacing_standard_new">@dimen/_16sdp</dimen>
+    <dimen name="t12_spacing_large">@dimen/_24sdp</dimen>
+    <dimen name="t12_spacing_xlarge">@dimen/_32sdp</dimen>
+    <dimen name="t12_spacing_xxlarge">@dimen/_40sdp</dimen>
+
+    <dimen name="t12_spacing_small">@dimen/_3sdp</dimen>
+    <dimen name="t12_spacing_medium">@dimen/_5sdp</dimen>
+    <dimen name="t12_spacing_xmedium">@dimen/_7sdp</dimen>
+    <dimen name="t12_spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="t12_spacing_smlarge">@dimen/_18sdp</dimen>
+    <dimen name="t12_spacing_mlarge">@dimen/_20sdp</dimen>
+    <dimen name="t12_spacing_mxlarge">@dimen/_25sdp</dimen>
+    <dimen name="t12_spacing_xxxlarge">@dimen/_55sdp</dimen>
+
+    <dimen name="Theme3_font_size_nano">10sp</dimen>
+    <dimen name="Theme3_font_size_micro">12sp</dimen>
+    <dimen name="Theme3_font_size_small">14sp</dimen>
+    <dimen name="Theme3_font_size_medium">16sp</dimen>
+    <dimen name="Theme3_font_size_normal">18sp</dimen>
+    <dimen name="Theme3_font_size_large">20sp</dimen>
+    <dimen name="Theme3_font_size_xlarge">22sp</dimen>
+    <dimen name="Theme3_font_size_xxLarge">26sp</dimen>
+    <dimen name="Theme3_font_size_35sp">35sp</dimen>
+    <dimen name="Theme3_font_size_40sp">45sp</dimen>
+    <dimen name="Theme3_font_size_splash">40sp</dimen>
+
+    <dimen name="Theme3_spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="Theme3_spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="Theme3_spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="Theme3_spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="Theme3_spacing_standard_new">@dimen/_16sdp</dimen>
+    <dimen name="Theme3_spacing_large">@dimen/_24sdp</dimen>
+    <dimen name="Theme3_spacing_xlarge">@dimen/_32sdp</dimen>
+    <dimen name="Theme3_spacing_xxLarge">@dimen/_40sdp</dimen>
+
+    <dimen name="theme11_font_size_nano">10sp</dimen>
+    <dimen name="theme11_font_size_micro">12sp</dimen>
+    <dimen name="theme11_font_size_small">14sp</dimen>
+    <dimen name="theme11_font_size_medium">16sp</dimen>
+    <dimen name="theme11_font_size_normal">18sp</dimen>
+    <dimen name="theme11_font_size_large">20sp</dimen>
+    <dimen name="theme11_font_size_xlarge">22sp</dimen>
+    <dimen name="theme11_font_size_xxlarge">26sp</dimen>
+    <dimen name="theme11_font_size_xxxlarge">30sp</dimen>
+    <dimen name="theme11_font_size_splash">40sp</dimen>
+
+    <dimen name="theme11_spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="theme11_spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="theme11_spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="theme11_spacing_standard_new">@dimen/_16sdp</dimen>
+    <dimen name="theme11_spacing_large">@dimen/_24sdp</dimen>
+    <dimen name="theme11_spacing_xlarge">@dimen/_32sdp</dimen>
+    <dimen name="theme11_spacing_xxlarge">@dimen/_40sdp</dimen>
+
+    <dimen name="theme11_spacing_small">@dimen/_3sdp</dimen>
+    <dimen name="theme11_spacing_medium">@dimen/_5sdp</dimen>
+    <dimen name="theme11_spacing_xmedium">@dimen/_7sdp</dimen>
+    <dimen name="theme11_spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="theme11_spacing_smlarge">@dimen/_18sdp</dimen>
+    <dimen name="theme11_spacing_mlarge">@dimen/_20sdp</dimen>
+    <dimen name="theme11_spacing_mxlarge">@dimen/_25sdp</dimen>
+    <dimen name="theme11_spacing_xxxlarge">@dimen/_55sdp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="Theme2_font_size_nano">10sp</dimen>
+    <dimen name="Theme2_font_size_micro">12sp</dimen>
+    <dimen name="Theme2_font_size_small">14sp</dimen>
+    <dimen name="Theme2_font_size_medium">16sp</dimen>
+    <dimen name="Theme2_font_size_normal">18sp</dimen>
+    <dimen name="Theme2_font_size_large">20sp</dimen>
+    <dimen name="Theme2_font_size_xlarge">22sp</dimen>
+    <dimen name="Theme2_font_size_xxLarge">26sp</dimen>
+    <dimen name="Theme2_font_size_splash">40sp</dimen>
+
+    <dimen name="Theme2_spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="Theme2_spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="Theme2_spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="Theme2_spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="Theme2_spacing_standard_new">@dimen/_16sdp</dimen>
+    <dimen name="Theme2_spacing_large">@dimen/_24sdp</dimen>
+    <dimen name="Theme2_spacing_xlarge">@dimen/_32sdp</dimen>
+    <dimen name="Theme2_spacing_xxLarge">@dimen/_40sdp</dimen>
+
+
+    <dimen name="Theme7_font_size_nano">10sp</dimen>
+    <dimen name="Theme7_font_size_micro">12sp</dimen>
+    <dimen name="Theme7_font_size_small">14sp</dimen>
+    <dimen name="Theme7_font_size_medium">16sp</dimen>
+    <dimen name="Theme7_font_size_normal">18sp</dimen>
+    <dimen name="Theme7_font_size_large">20sp</dimen>
+    <dimen name="Theme7_font_size_xlarge">22sp</dimen>
+    <dimen name="Theme7_font_size_xxLarge">26sp</dimen>
+    <dimen name="Theme7_font_size_35sp">35sp</dimen>
+    <dimen name="Theme7_font_size_40sp">45sp</dimen>
+    <dimen name="Theme7_font_size_splash">40sp</dimen>
+
+    <dimen name="Theme7_spacing_control_half">@dimen/_2sdp</dimen>
+    <dimen name="Theme7_spacing_control">@dimen/_4sdp</dimen>
+    <dimen name="Theme7_spacing_standard">@dimen/_8sdp</dimen>
+    <dimen name="Theme7_spacing_middle">@dimen/_10sdp</dimen>
+    <dimen name="Theme7_spacing_standard_new">@dimen/_16sdp</dimen>
+    <dimen name="Theme7_spacing_large">@dimen/_24sdp</dimen>
+    <dimen name="Theme7_spacing_xlarge">@dimen/_32sdp</dimen>
+    <dimen name="Theme7_spacing_xxLarge">@dimen/_40sdp</dimen>
 </resources>
