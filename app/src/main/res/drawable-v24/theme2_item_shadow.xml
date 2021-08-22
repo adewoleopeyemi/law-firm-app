@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding
+                android:bottom="@dimen/_1sdp"
+                android:left="@dimen/_1sdp"
+                android:right="@dimen/_1sdp"
+                android:top="@dimen/_1sdp" />
+
+            <solid android:color="#00E2E2E2" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="@dimen/_1sdp"
+                android:left="@dimen/_1sdp"
+                android:right="@dimen/_1sdp"
+                android:top="@dimen/_1sdp" />
+
+            <solid android:color="#05E2E2E2" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="@dimen/_1sdp"
+                android:left="@dimen/_1sdp"
+                android:right="@dimen/_1sdp"
+                android:top="@dimen/_1sdp" />
+
+            <solid android:color="#0aE2E2E2" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="@dimen/_1sdp"
+                android:left="@dimen/_1sdp"
+                android:right="@dimen/_1sdp"
+                android:top="@dimen/_1sdp" />
+
+            <solid android:color="#0fE2E2E2" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="@dimen/_1sdp"
+                android:left="@dimen/_1sdp"
+                android:right="@dimen/_1sdp"
+                android:top="@dimen/_1sdp" />
+
+            <solid android:color="#14E2E2E2" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item
+        android:id="@+id/itemShape">
+        <shape>
+            <solid android:color="@color/T6White" />
+
+            <corners android:radius="@dimen/Theme2_spacing_standard" />
+        </shape>
+    </item>
+
+</layer-list>
