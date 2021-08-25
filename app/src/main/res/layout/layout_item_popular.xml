@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/Theme3_spacing_middle"
+            android:layout_marginEnd="@dimen/Theme3_spacing_standard"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/card"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Theme3_spacing_standard_new">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/Theme3_spacing_control_half"
+                    android:background="@drawable/theme3_item_shadow">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_55sdp"
+                        android:layout_marginTop="@dimen/Theme3_spacing_standard_new"
+                        android:layout_marginEnd="@dimen/Theme3_spacing_standard"
+                        android:layout_marginBottom="@dimen/Theme3_spacing_standard_new"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/basic"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/T6TextColorPrimary"
+                            android:textSize="@dimen/t6_font_normal"
+                            android:textStyle="bold"
+                            tools:text="Barr. Micheal Adegoke" />
+
+                        <TextView
+                            android:id="@+id/tv_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/basic"
+                            android:layout_below="@+id/tv_name"
+                            android:textAppearance="@style/Theme3FontSemiBold"
+                            android:textColor="@color/T6TextColorSecondary"
+                            android:textSize="@dimen/t6_font_medium"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            tools:text="Criminal Law" />
+
+                        <RatingBar
+                            android:id="@+id/ratings"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/tv_category"
+                            android:numStars="5" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ratings"
+                            android:layout_marginTop="@dimen/Theme3_spacing_standard">
+
+
+                            <TextView
+                                android:id="@+id/tv_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/Theme3_spacing_standard"
+                                android:layout_marginEnd="@dimen/Theme3_spacing_standard"
+                                android:maxLength="35"
+                                android:maxLines="1"
+                                android:textSize="@dimen/Theme3_font_size_small"
+                                tools:text="I am an experienced lawyer with 5 years experience" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.example.successsynergyapp.utils.Theme3CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                app:layout_anchor="@id/card"
+                app:layout_anchorGravity="center|start"
+                android:src="@drawable/theme3_ic_profile8"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+</layout>

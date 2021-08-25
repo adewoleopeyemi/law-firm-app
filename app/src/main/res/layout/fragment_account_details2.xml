@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llAccountDetails"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/theme11_spacing_xlarge"
+                android:layout_marginStart="@dimen/theme11_spacing_large"
+                android:textSize="@dimen/theme11_font_size_xlarge"
+                android:textAppearance="@style/Theme11FontSemiBold"
+                android:textColor="@color/theme11_textColorPrimary"
+                android:text="@string/upload_your_picture"
+                android:fontFamily="@font/basic"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_item_shadow"
+                android:backgroundTint="@color/t12_white"
+                android:layout_marginTop="@dimen/_50sdp">
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_height="70dp"
+                    android:layout_width="70dp"
+                    android:src="@drawable/outline_person_gray"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:hint="@string/phone_number"
+                style="@style/T11TextInputStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:inputType="phone"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    style="@style/Theme11MaterialButtonStyle.Filled"
+                    android:layout_marginStart="@dimen/theme11_spacing_large"
+                    android:layout_marginTop="@dimen/theme11_spacing_control"
+                    android:layout_marginBottom="@dimen/theme11_spacing_large"
+                    android:textAppearance="@style/Theme11FontMedium"
+                    android:layout_marginEnd="@dimen/theme11_spacing_large"
+                    android:paddingStart="@dimen/theme11_spacing_xxlarge"
+                    android:paddingEnd="@dimen/theme11_spacing_xxlarge"
+                    android:text="@string/next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

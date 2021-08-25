@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:background="@color/white"
+    android:text="All Forms"
+    android:textColor="@color/t12_textColorSecondary"
+    android:textAlignment="center"
+    app:titleTextColor="@color/Theme1_textColorPrimary"
+    android:theme="@style/Theme1Theme.AppBarOverlay"/>

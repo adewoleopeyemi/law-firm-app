@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/t12_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/t12_bg_bottom_shadow">
+
+            <ImageView
+                android:layout_marginStart="@dimen/t12_spacing_standard"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/t12_spacing_standard"
+                android:src="@drawable/t12_ic_keyboard_arrow_left"/>
+
+            <TextView
+                android:id="@+id/tvToolBarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/basic"
+                android:gravity="center"
+                android:text="@string/t12_lbl_search"
+                android:textAllCaps="true"
+                android:textAppearance="@style/T12FontBold"
+                android:textColor="@color/t12_textColorPrimary"
+                android:textSize="@dimen/t12_font_size_medium" />
+        </RelativeLayout>
+
+
+        <EditText
+            style="@style/T12EditTextStyle"
+            android:layout_marginTop="@dimen/t12_spacing_standard_new"
+            android:drawableStart="@drawable/t12_ic_search"
+            android:drawablePadding="@dimen/t12_spacing_standard"
+            android:drawableTint="@color/t12_textColorSecondary"
+            android:id="@+id/et_search"
+            android:hint="@string/search"
+            android:textColorHint="@color/t12_textColorSecondary"/>
+        <!--    </RelativeLayout>-->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/T12Heading"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:drawableStart="@drawable/t12_ic_send_plane_line"
+                    android:drawablePadding="@dimen/t12_spacing_standard"
+                    android:drawableTint="@color/t12_colorPrimary"
+                    android:text="Search By Name"
+                    android:id="@+id/tv_search"
+                    android:textColor="@color/t12_colorPrimary" />
+
+                <TextView
+                    style="@style/T12Heading"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:text="@string/t12_lbl_last_search"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/basic"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/t12_spacing_standard_new">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rotation="180"
+                        android:src="@drawable/t12_ic_direction"/>
+
+                    <LinearLayout
+                        android:id="@+id/llMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                        android:layout_toEndOf="@id/img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_last_search_name"
+                            style="@style/T12SettingHeading"
+                            android:padding="0dp"
+                            android:text=""
+                            android:textAllCaps="false" />
+
+                        <TextView
+                            style="@style/T12SubHeading"
+                            android:text=""
+                            android:id="@+id/tv_last_search_category"
+                            android:textSize="@dimen/t12_font_size_small"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/T12Heading"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:text="Popular Searches"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/basic"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:layout_marginBottom="@dimen/t12_spacing_standard_new" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

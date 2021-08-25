@@ -41,91 +41,25 @@
                 android:padding="@dimen/Theme7_spacing_middle"
                 android:singleLine="false"
                 android:elevation="109dp"/>
-            <LinearLayout
-                android:id="@+id/llAns1"
-                android:layout_width="match_parent"
+            <RadioGroup
+                android:id="@+id/rd_grp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/Theme7_spacing_middle">
-                <TextView
-                    android:id="@+id/tvA"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/btn_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A"
-                    android:fontFamily="@font/basic"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-
-                <TextView
-                    android:id="@+id/tvAns1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
-                    android:gravity="start"
-                    android:text="Please answer this"
-                    android:fontFamily="@font/basic"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llAns2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/Theme7_spacing_middle"
-                android:padding="@dimen/Theme7_spacing_middle">
-
-                <TextView
-                    android:id="@+id/tvB"
+                    android:text="@string/yes"
+                    android:buttonTint="@color/t12_colorPrimary"/>
+                <RadioButton
+                    android:id="@+id/btn_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
-                    android:gravity="center"
-                    android:text="B"
-                    android:fontFamily="@font/basic"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-
-                <TextView
-                    android:id="@+id/tvAns2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
-                    android:gravity="start"
-                    android:text="Ten Steps"
-                    android:fontFamily="@font/basic"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/llAns3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/Theme7_spacing_middle"
-                android:padding="@dimen/Theme7_spacing_middle">
-
-                <TextView
-                    android:id="@+id/tvC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard"
-                    android:gravity="center"
-                    android:text="C"
-                    android:fontFamily="@font/basic"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-
-                <TextView
-                    android:id="@+id/tvAns3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/Theme7_spacing_standard_new"
-                    android:gravity="start"
-                    android:text="Some question goes here"
-                    android:textColor="@color/Theme7_textColorSecondary"
-                    android:textSize="@dimen/Theme7_font_size_medium" />
-            </LinearLayout>
+                    android:text="@string/no"
+                    android:buttonTint="@color/t12_colorPrimary"/>
+            </RadioGroup>
         </LinearLayout>
     </RelativeLayout>
 </layout>

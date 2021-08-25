@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@drawable/t12_shadoe">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/t12_spacing_standard"
+            app:cardElevation="0dp">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rlImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/theme3_ic_profile8"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/iv_profile"/>
+                    <RatingBar
+                        android:id="@+id/ratings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:numStars="5"
+                        android:background="@drawable/t12_bg_btn"
+                        android:layout_alignParentBottom="true"
+                        android:paddingStart="@dimen/t12_spacing_middle"
+                        android:paddingEnd="@dimen/t12_spacing_middle"
+                        android:layout_marginStart="@dimen/t12_spacing_middle"
+                        android:layout_marginBottom="@dimen/t12_spacing_middle"
+                        android:paddingTop="@dimen/t12_spacing_control_half"
+                        android:paddingBottom="@dimen/t12_spacing_control_half"
+                        android:textSize="@dimen/t12_font_size_medium"
+                        android:textColor="@color/t12_white"
+                        android:progressTint="@color/white"
+                        android:progressBackgroundTint="@color/white"
+                        android:secondaryProgressTint="@color/white"
+                        android:progress="1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/rlImg"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/T12Heading"
+                        android:layout_toStartOf="@id/tv_category"
+                        android:text="@string/app_name"
+                        android:textColor="@color/T6TextColorPrimary"
+                        android:textSize="@dimen/t6_font_medium"
+                        android:fontFamily="@font/basic"/>
+                    <TextView
+                        android:layout_marginStart="@dimen/t12_spacing_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/t12_textColorSecondary"
+                        android:textSize="@dimen/t12_font_size_medium"
+                        android:text="@string/app_name"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:fontFamily="@font/assistant_light"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/tv_category"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_below="@id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/t12_textColorSecondary"
+                        android:textSize="@dimen/t12_font_size_small"
+                        android:text="@string/app_name"
+                        android:fontFamily="@font/assistant_light"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/t12_spacing_control_half"
+                        android:drawableStart="@drawable/t12_ic_place"
+                        android:drawableTint="@color/t12_textColorSecondary"
+                        android:id="@+id/tv_location"
+                        android:maxLength="35"
+                        android:maxLines="1"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

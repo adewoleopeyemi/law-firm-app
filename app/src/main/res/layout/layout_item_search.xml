@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/t12_spacing_standard_new"
+        android:layout_marginEnd="@dimen/t12_spacing_standard_new"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/t12_ic_star_border" />
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/t12_spacing_standard_new"
+            android:layout_toEndOf="@id/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textAllCaps="false"
+                style="@style/T12SettingHeading"
+                android:padding="0dp"
+                android:fontFamily="@font/basic"
+                android:text="@string/t12_lbl_search" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                style="@style/T12SubHeading"
+                android:fontFamily="@font/assistant_light"
+                android:text="@string/t12_lbl_search" />
+        </LinearLayout>
+        <View
+            style="@style/T12ViewFilter"
+            android:layout_below="@id/llMain" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_16sdp"
+    android:layout_marginEnd="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_16sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:cardCornerRadius="@dimen/_12sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test_law_profile"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_6sdp"
+                android:src="@drawable/ic_outline_favorite_border_white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toEndOf="@+id/cv1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/t6_name"
+            android:textColor="@color/T6TextColorPrimary"
+            android:textSize="@dimen/t6_font_normal"
+            android:fontFamily="@font/basic"/>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/t6_address"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:textColor="@color/T6TextColorSecondary"
+            android:textSize="@dimen/t6_font_medium" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:gravity="start"
+                android:text="@string/app_name"
+                android:textColor="@color/T6TextColorPrimary"
+                android:textSize="@dimen/t6_font_medium" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_decription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/t6_font_medium"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/basic"/>
+    </LinearLayout>
+
+    <View
+        android:layout_toEndOf="@+id/cv1"
+        android:layout_below="@id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/T6ViewColor"
+        android:layout_marginTop="@dimen/_16sdp" />
+</RelativeLayout>

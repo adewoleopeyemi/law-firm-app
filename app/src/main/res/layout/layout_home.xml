@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="20dp"
+            android:id="@+id/rl_loading">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/loading_anim"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/assistant_light"
+                android:text="Loading...."
+                android:textSize="30sp" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/loading_anim"
+                app:lottie_rawRes="@raw/law_loading"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+        </RelativeLayout>
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/T12AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/t12_white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/t12_white"
+                    app:layout_collapseMode="parallax">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivBg"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/law_preview_3"
+                            app:layout_constraintDimensionRatio="H,0.95"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="@dimen/_50sdp"
+                            android:layout_marginEnd="@dimen/_50sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:background="@drawable/t12_bg_rounded_stroke"
+                            app:layout_constraintBottom_toBottomOf="@id/ivBg">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/user_selection"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_minus1sdp">
+
+                                <View
+                                    android:id="@+id/selected_category"
+                                    android:layout_width="135dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/t12_bg_rounded"
+                                    android:backgroundTint="@color/t12_white"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintDimensionRatio="W,3.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_all_users"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="All"
+                                    android:textColor="@color/t12_colorPrimary"
+                                    android:textSize="@dimen/t12_font_size_medium" />
+
+                                <TextView
+                                    android:id="@+id/tv_top_rated_users"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Top Rated"
+                                    android:textColor="@color/t12_textColorPrimary"
+                                    android:textSize="@dimen/t12_font_size_medium" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <EditText
+                        android:layout_marginTop="@dimen/_68sdp"
+                        style="@style/T12EditTextStyle"
+                        android:hint="@string/t12_lbl_search"
+                        android:focusable="false"
+                        android:id="@+id/et_search"
+                        android:textColorHint="@color/t12_textColorPrimary"
+                        android:textColor="@color/t12_textColorPrimary"
+                        android:drawableEnd="@drawable/t12_ic_search"
+                        android:drawableTint="@color/t12_textColorSecondary"
+                        android:paddingStart="@dimen/t12_spacing_standard_new"
+                        android:paddingEnd="@dimen/t12_spacing_standard_new"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/T12AppTheme.PopupOverlay">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/t12_ic_menu"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="TODO" />
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="13sp"
+                        android:id="@+id/tv_search_results"
+                        android:text="Search Results"
+                        android:textAllCaps="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/basic"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <LinearLayout
+                        android:id="@+id/llMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                            style="@style/T12Heading"
+                            android:id="@+id/tv_popular"
+                            android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                            android:text="Popular"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/basic"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_popular"
+                            style="@style/T12RecycleView"
+                            android:layout_marginTop="@dimen/t12_spacing_standard" />
+
+                        <TextView
+                            style="@style/T12Heading"
+                            android:id="@+id/tv_general"
+                            android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                            android:layout_marginTop="@dimen/t12_spacing_middle"
+                            android:text="General"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/basic"/>
+
+                        <RelativeLayout
+                            android:id="@+id/all_rl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="@dimen/_90sdp" >
+                            <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/tabLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/t12_colorPrimary"
+                                android:background="@color/t12_colorPrimary"
+                                app:tabMode="scrollable"
+                                app:tabSelectedTextColor="@color/white"
+                                app:tabIndicator="@color/white"
+                                app:tabTextColor="@color/white"/>
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewpager_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/tabLayout"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rv_top_rated"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

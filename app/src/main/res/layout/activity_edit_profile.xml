@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/t12_white">
+
+        <include layout="@layout/theme11_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rlStep"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/theme11_spacing_xlarge"
+                    android:layout_marginStart="@dimen/theme11_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/theme11_spacing_standard_new"
+                    android:paddingStart="@dimen/theme11_spacing_control"
+                    android:paddingEnd="@dimen/theme11_spacing_control">
+
+                    <TextView
+                        android:id="@+id/tvStep1"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:text="@string/_1"
+                        android:gravity="center"
+                        android:backgroundTint="@color/t12_colorPrimaryDark"
+                        android:textColor="@color/t12_white"
+                        android:textSize="@dimen/theme11_font_size_large"
+                        android:background="@drawable/theme11_bg_ract_cornered" />
+
+                    <View
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/theme11_spacing_control"
+                        android:layout_marginEnd="@dimen/theme11_spacing_control"
+                        android:background="@color/theme11_view_color" />
+
+                    <TextView
+                        android:id="@+id/tvStep2"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:text="2"
+                        android:gravity="center"
+                        android:textColor="@color/t12_colorPrimaryDark"
+                        android:textSize="@dimen/theme11_font_size_large"
+                        android:background="@drawable/theme3_item_shadow" />
+
+                    <View
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="@dimen/theme11_spacing_control"
+                        android:layout_marginEnd="@dimen/theme11_spacing_control"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/theme11_view_color" />
+
+                    <TextView
+                        android:id="@+id/tvStep3"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:text="@string/_3"
+                        android:gravity="center"
+                        android:textColor="@color/t12_colorPrimaryDark"
+                        android:textSize="@dimen/theme11_font_size_large"
+                        android:background="@drawable/theme3_item_shadow" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_below="@id/rlStep"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llAccountDetails"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/theme11_spacing_xlarge"
+                android:layout_marginStart="@dimen/theme11_spacing_large"
+                android:textSize="@dimen/theme11_font_size_xlarge"
+                android:textAppearance="@style/Theme11FontSemiBold"
+                android:textColor="@color/theme11_textColorPrimary"
+                android:text="@string/service_provider_details"
+                android:fontFamily="@font/basic"/>
+
+            <EditText
+                android:id="@+id/chamber"
+                style="@style/T11TextInputStyle"
+                android:padding="15dp"
+                android:layout_marginTop="@dimen/theme11_spacing_xlarge"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:hint="@string/chamber"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+
+            <EditText
+                android:id="@+id/years_of_experience"
+                style="@style/T11TextInputStyle"
+                android:padding="15dp"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:hint="@string/years_of_experience"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+            <EditText
+                android:id="@+id/state_justification"
+                android:hint="@string/state_justification"
+                style="@style/T11TextInputStyle"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+            <EditText
+                android:id="@+id/roll_call_number"
+                android:hint="@string/roll_call_number"
+                style="@style/T11TextInputStyle"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:hint="@string/address"
+                style="@style/T11TextInputStyle"
+                android:background="@drawable/theme3_item_shadow"
+                android:textSize="16sp"
+                android:padding="15dp"
+                android:textColorHint="@color/t12_textColorSecondary"
+                android:textColor="@color/t12_textColorPrimary"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    style="@style/Theme11MaterialButtonStyle.Filled"
+                    android:layout_marginStart="@dimen/theme11_spacing_large"
+                    android:layout_marginTop="@dimen/theme11_spacing_control"
+                    android:layout_marginBottom="@dimen/theme11_spacing_large"
+                    android:textAppearance="@style/Theme11FontMedium"
+                    android:layout_marginEnd="@dimen/theme11_spacing_large"
+                    android:paddingStart="@dimen/theme11_spacing_xxlarge"
+                    android:paddingEnd="@dimen/theme11_spacing_xxlarge"
+                    android:text="@string/next" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
