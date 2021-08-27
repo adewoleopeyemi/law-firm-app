@@ -4,8 +4,57 @@ import java.io.Serializable;
 
 public class ModelForm implements Serializable {
     String first_name, surname, Location, State, email_address, phone_number;
-    String type_of_service, budget;
-    boolean willing_to_pay, consent, ready_to_deposit, intend_to_balance;
+    String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed;
+
+    public String getAgreed() {
+        return agreed;
+    }
+
+    public void setAgreed(String agreed) {
+        this.agreed = agreed;
+    }
+
+    public String getIntend_to_pay() {
+        return intend_to_pay;
+    }
+
+    public void setIntend_to_pay(String intend_to_pay) {
+        this.intend_to_pay = intend_to_pay;
+    }
+
+    public String getReady_to_deposit() {
+        return ready_to_deposit;
+    }
+
+    public void setReady_to_deposit(String ready_to_deposit) {
+        this.ready_to_deposit = ready_to_deposit;
+    }
+
+    public String getWilling_to_pay() {
+        return willing_to_pay;
+    }
+
+    public void setWilling_to_pay(String willing_to_pay) {
+        this.willing_to_pay = willing_to_pay;
+    }
+
+    boolean consent, intend_to_balance;
+
+    public String getBullet_point() {
+        return bullet_point;
+    }
+
+    public void setBullet_point(String bullet_point) {
+        this.bullet_point = bullet_point;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
 
     public String getFirst_name() {
         return first_name;
@@ -71,28 +120,12 @@ public class ModelForm implements Serializable {
         this.budget = budget;
     }
 
-    public boolean isWilling_to_pay() {
-        return willing_to_pay;
-    }
-
-    public void setWilling_to_pay(boolean willing_to_pay) {
-        this.willing_to_pay = willing_to_pay;
-    }
-
     public boolean isConsent() {
         return consent;
     }
 
     public void setConsent(boolean consent) {
         this.consent = consent;
-    }
-
-    public boolean isReady_to_deposit() {
-        return ready_to_deposit;
-    }
-
-    public void setReady_to_deposit(boolean ready_to_deposit) {
-        this.ready_to_deposit = ready_to_deposit;
     }
 
     public boolean isIntend_to_balance() {

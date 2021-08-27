@@ -345,7 +345,7 @@
         <item name="android:layout_marginEnd">@dimen/Theme7_spacing_standard_new</item>
         <item name="android:background">@drawable/theme7_bg_circle</item>
         <item name="android:padding">@dimen/Theme7_spacing_control</item>
-        <item name="android:tint">@color/Theme7_white</item>
+        <item name="android:tint">@color/black</item>
         <item name="android:src">@drawable/theme7_ic_arrow_forward</item>
     </style>
 

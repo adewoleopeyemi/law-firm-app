@@ -14,7 +14,7 @@
             android:layout_height="match_parent"
             android:layout_above="@id/llAns"
             android:gravity="center_vertical|center"
-            android:text="notification"
+            android:text=""
             android:fontFamily="@font/aldrich"
             android:textColor="@color/Theme7_textColorPrimary"
             android:textSize="14dp" />
