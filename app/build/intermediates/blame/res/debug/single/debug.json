@@ -1,0 +1,582 @@
+[
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_bg_rounded_border_fill.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_bg_rounded_border_fill.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_keyboard_arrow_down_white.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_keyboard_arrow_down_white.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_search.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_bg_back_button.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/bg_back_button.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_security.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_security.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_close.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_close.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_single_form.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_single_form.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_button_round.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_bg_button_round.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_place.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_place.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_keyboard_arrow_down.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_keyboard_arrow_down.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_compass.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_compass.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_bottom_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_bottom_shadow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_item_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_item_shadow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_assistant_light.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/assistant_light.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_test_law_profile.jpeg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/test_law_profile.jpeg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/anim_theme1_layout_animation.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/anim/theme1_layout_animation.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme3_bottom_navigation_cell.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme3_bottom_navigation_cell.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_form.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_form.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_item_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_item_shadow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_abril_fatface.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/abril_fatface.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_favorite_border_white.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_favorite_border_white.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_rounded.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_rounded.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_card_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_card_shadow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/raw_law_loading.json.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/raw/law_loading.json"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_profile8.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_profile8.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_parking.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_parking.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_favorite_border.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_favorite_border.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_bg_ractangal_cornered.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_bg_ractangal_cornered.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme11_toolbar.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme11_toolbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_star_border.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_star_border.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_ic_pencil_line.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_ic_pencil_line.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_bg_filter_button.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/bg_filter_button.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_user_type.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_user_type.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_baseline_access_time.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_baseline_access_time.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_search.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_user_profile.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_user_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/menu_menu_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/menu/menu_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_preview1.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/law_preview1.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_search.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_edittext.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_edittext.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_social_login_2.jpeg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/social_login_2.jpeg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_sign_up.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_sign_up.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme11_bg_gradient_profile.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme11_bg_gradient_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_ic_more_vert.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_ic_more_vert.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_basic.ttf.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/basic.ttf"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_bg_circle.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_bg_circle.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_placeholder.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_placeholder.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_bg_list.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_bg_list.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_bg_btn.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_bg_btn.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_t12_bg_circle_stroke.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/t12_bg_circle_stroke.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_item_general.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_item_general.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_send_plane_line.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_send_plane_line.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme11_bg_ract_cornered.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme11_bg_ract_cornered.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_bg_rounded_border.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_bg_rounded_border.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_circle_item_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/circle_item_shadow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_baseline_add_24.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme3_toolbar.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme3_toolbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_related_auth.jpeg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/law_related_auth.jpeg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_work_outline.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_work_outline.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme1_toolbar.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme1_toolbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_shadoe.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_shadoe.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_message.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_message.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_ic_arrow_forward.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_ic_arrow_forward.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_preview_3.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/law_preview_3.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_walk_through.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_walk_through.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_pets.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_pets.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_ic_camera_line.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_ic_camera_line.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_menu.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_menu.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/anim_theme1_item_anim_fall_down.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/anim/theme1_item_anim_fall_down.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_ic_fab_back.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_ic_fab_back.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_auth.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_auth.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/anim_item_anim_fall_down.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/anim/item_anim_fall_down.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme7_ic_close.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme7_ic_close.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_account_details3.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_account_details3.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_wifi.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_wifi.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_veg.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_veg.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/anim_layout_animation_fall_down.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/anim/layout_animation_fall_down.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_events.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_events.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_aldrich.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/aldrich.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_preview_4.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/law_preview_4.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_breakfast.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_breakfast.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_star_border_yellow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_star_border_yellow.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_google.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_google.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_t12_ic_pencil.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/t12_ic_pencil.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_dining.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_dining.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_item_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_item_search.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_notification.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_notification.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_rating.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_bg_rating.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_cover_image_.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_cover_image_.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_login_page_resized.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/login_page_resized.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_apple.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_apple.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_person_outline.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_person_outline.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_outline_person_gray.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/outline_person_gray.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_hotel.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_hotel.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_item_home_top_rated.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_item_home_top_rated.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_food.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_food.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_account.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_account.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_facebook.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_facebook.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_bg_back_button_black.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/bg_back_button_black.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_direction.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_direction.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_keyboard_arrow_left.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_keyboard_arrow_left.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme7_bg_seekbar.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme7_bg_seekbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_individual_all.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_individual_all.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_edit_profile.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_account_details.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_account_details.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_login.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_preview_img.jpg.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/law_preview_img.jpg"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_rounded_stroke.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_rounded_stroke.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_ic_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_ic_search.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_account_details2.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_account_details2.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_item_popular.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_item_popular.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_walk_through.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_walk_through.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_flight.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_flight.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_activity_user_form.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_user_form.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_aclonica.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/aclonica.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_filter.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_ic_filter.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme2_toolbar.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme2_toolbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_ic_outline_star_border.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/ic_outline_star_border.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_edit_text.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_bg_edit_text.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme2_bg_button_ract.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme2_bg_button_ract.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_single_form_question.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_single_form_question.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_white_rounded.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_bg_white_rounded.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_btn.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_btn.xml"
+    }
+]

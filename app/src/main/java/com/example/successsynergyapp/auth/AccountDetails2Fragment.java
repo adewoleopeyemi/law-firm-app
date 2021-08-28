@@ -112,14 +112,6 @@ public class AccountDetails2Fragment extends Fragment {
         startActivityForResult(Intent.createChooser(pickPhoto, "Select Picture"), 1);
     }
 
-    private void takePictureFromCamera() {
-        Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        takePicture.setType("image/*");
-        if (takePicture.resolveActivity(getActivity().getPackageManager()) != null) {
-            startActivityForResult(takePicture, 2);
-        }
-    }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         switch (requestCode){

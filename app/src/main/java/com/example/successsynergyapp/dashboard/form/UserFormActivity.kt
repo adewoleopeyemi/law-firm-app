@@ -1,8 +1,10 @@
 package com.example.successsynergyapp.dashboard.form
 
+import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import android.view.View.GONE
@@ -18,13 +20,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.successsynergyapp.R
 import com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleQuestion
-import com.example.successsynergyapp.dashboard.form.adapters.FormsRecyclerViewAdapter
 import com.example.successsynergyapp.databinding.ActivityUserFormBinding
 import com.example.successsynergyapp.databinding.LayoutSingleFormQuestionBinding
 import com.example.successsynergyapp.model.ModelForm
 import com.example.successsynergyapp.model.SingleQuestionModel
 import com.example.successsynergyapp.utils.theme3bottomnavigation.theme11utils.getAppColor
 import com.example.successsynergyapp.utils.theme3bottomnavigation.theme11utils.onClick
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.yuyakaido.android.cardstackview.*
 import kotlinx.android.synthetic.main.layout_single_form_question.*
 import kotlinx.android.synthetic.main.layout_single_form_question.view.*
@@ -37,45 +41,21 @@ class UserFormActivity : AppCompatActivity() {
     var curQuuestion = SingleQuestionModel()
     lateinit var runnable: Runnable
     var TAG = "UserFormActiivity"
+    private lateinit var firebaseDatabase: FirebaseDatabase
+    private lateinit var pd: ProgressDialog
 
 
-    private val mOnlineTestAdapter =
-            FormsRecyclerViewAdapter<SingleQuestionModel>(R.layout.layout_single_form_question,
-                    onBind = { view: View, item, position ->
-                        view.tvQuestion.text = item.question
-                        if (item.requiresTyping) run {
-                            view.et_answer.hint = "Please type your answer here"
-                            view.et_answer.visibility = VISIBLE
-                            view.et_answer.hint = "Please type your answer here"
-                            view.rd_grp.visibility = GONE
-                            runnable = Runnable {
-                                try{
-                                    curQuuestion.answer = et_answer.text.toString()
-                                }
-                                catch (e: Exception){
-
-                                }
-                                Handler().postDelayed(runnable, 100)
-                            }
-                            runnable.run()
-                        }
-                        else {
-                            view.rd_grp.visibility = VISIBLE
-                            view.btn_yes.text = "Yes"
-                            view.btn_no.text = "No"
-                            view.et_answer.visibility = GONE
-                        }
-                    })
 
 
     private val manager by lazy { CardStackLayoutManager(this) }
-    private fun handleClickEvent(view: View, item: SingleQuestionModel, position: Int) {
-        mOnlineTestAdapter.notifyItemChanged(position)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_user_form)
+        firebaseDatabase = FirebaseDatabase.getInstance()
+        pd = ProgressDialog(this)
+        pd.setCancelable(false)
+        pd.setMessage("Processing Form...")
         mSize = getData().size
         supportActionBar!!.hide()
         binding.ivClose.onClick { onBackPressed() }
@@ -86,68 +66,83 @@ class UserFormActivity : AppCompatActivity() {
                 .setInterpolator(AccelerateInterpolator())
                 .build()
         binding.btnLogin.setOnClickListener {
-            registerData(adapter!!)
-            Toast.makeText(applicationContext, ""+ adapter!!.currentAnswer.question, Toast.LENGTH_SHORT).show()
-            manager.setSwipeAnimationSetting(setting)
-            binding.cardStackView.swipe()
-            mProgress++
-            binding.sBar.progress = mProgress
-            if (binding.sBar.progress==binding.sBar.max){
-                finish()
+            if (adapter!!.currentAnswer.answer.isEmpty()){
+                Toast.makeText(applicationContext, "Please answer the above question", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                registerData(adapter!!)
+                manager.setSwipeAnimationSetting(setting)
+                binding.cardStackView.swipe()
+                mProgress++
+                binding.sBar.progress = mProgress
+                if (binding.sBar.progress==binding.sBar.max){
+                    pd.show()
+                    uploadForm()
+                    //finish()
+                }
             }
         }
         binding.sBar.max = getData().size
     }
 
+    private fun uploadForm() {
+        firebaseDatabase.reference.child("Forms").child(FirebaseAuth.getInstance().currentUser!!.uid)
+            .child(""+SystemClock.currentThreadTimeMillis())
+            .setValue(form).addOnSuccessListener {
+                pd.dismiss()
+                Toast.makeText(applicationContext ,"Application submitted successfully!!", Toast.LENGTH_SHORT).show()
+                finish()
+            }
+    }
+
     private fun registerData(adapter: AdapterSingleQuestion) {
-        if (adapter!!.currentAnswer.question ==ques1){
+        if (adapter.currentAnswer.position == 0){
             form.first_name = adapter!!.currentAnswer.answer
-            Toast.makeText(applicationContext, "first name entered", Toast.LENGTH_SHORT).show()
         }
-        else if (adapter!!.currentAnswer.question == ques2){
+        else if (adapter.currentAnswer.position == 1){
             form.surname = adapter!!.currentAnswer.answer
-            Toast.makeText(applicationContext, "qeustion 2 entered", Toast.LENGTH_SHORT).show()
         }
-        else if (adapter!!.currentAnswer.question == ques3){
+        else if (adapter.currentAnswer.position == 2){
             form.location = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == ques4){
+        else if (adapter.currentAnswer.position == 3){
             form.state = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == ques5){
+        else if (adapter.currentAnswer.position == 4){
             form.street = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest6){
+        else if (adapter.currentAnswer.position == 5){
             form.email_address = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest7){
+        else if (adapter.currentAnswer.position == 6){
             form.phone_number = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest8){
+        else if (adapter.currentAnswer.position == 7){
             form.type_of_service = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest9){
+        else if (adapter.currentAnswer.position == 8){
             form.bullet_point = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest10){
+        else if (adapter.currentAnswer.position == 9){
             form.willing_to_pay = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest11){
+        else if (adapter.currentAnswer.position == 10){
             form.budget = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest12){
+        else if (adapter.currentAnswer.position == 11){
             form.ready_to_deposit = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest13){
+        else if (adapter.currentAnswer.position == 12){
             form.intend_to_pay = adapter!!.currentAnswer.answer
         }
-        else if (adapter!!.currentAnswer.question == quest14){
+        else if (adapter.currentAnswer.position == 13){
             form.agreed = adapter!!.currentAnswer.answer
         }
     }
 
     var adapter: AdapterSingleQuestion? = null
     private fun initialize() {
+        form.status = "Pending"
         adapter = AdapterSingleQuestion(getData(), applicationContext)
         manager.setStackFrom(StackFrom.Top)
         manager.setVisibleCount(3)
@@ -168,26 +163,11 @@ class UserFormActivity : AppCompatActivity() {
             }
         }
     }
-    var ques1 = "What is your full name?"
-    var ques2 = "What is your surname?"
-    var ques3 = "Where is your Location/Country?"
-    var ques4 = "Where is your State/Providence/City?"
-    var ques5 = "Your Street?"
-    var quest6 = "email address?"
-    var quest7 = "phone number? "
-    var quest8 = "Type of service required? "
-    var quest9 = "Bullet points of issues requiring legal services? "
-    var quest10 = "Are you willing to pay for the service? (Yes/No)"
-    var quest11 = "what is your budget? (please specify currency in words)"
-    var quest12 = "Do you consent to resonable variations in fees?"
-    var quest13 = "Are you ready to deposit the balance of the lawyers fee with us to ensure payment upon completion?"
-    var quest14 = "If no how do you intend to pay?"
-    var quest15 = "By clicking submit you agree to the terms and conditions of our services and additional terms as included as lawyers?"
     companion object{
         fun getData(): ArrayList<SingleQuestionModel> {
             val list = ArrayList<SingleQuestionModel>()
             val model1 = SingleQuestionModel()
-            model1.question = "What is your full name?"
+            model1.question = "What is your first name?"
             model1.isBoolean = false
             model1.requiresTyping = true
             model1.position = 1
@@ -293,6 +273,5 @@ class UserFormActivity : AppCompatActivity() {
 
             return list
         }
-
     }
 }

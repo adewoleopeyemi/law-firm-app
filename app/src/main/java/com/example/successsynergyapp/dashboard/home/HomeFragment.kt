@@ -31,9 +31,6 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.layout_home.*
-import kotlinx.android.synthetic.main.layout_home.tabLayout
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -45,30 +42,6 @@ class HomeFragment : Fragment() {
     var popularUsers: ArrayList<ModelServiceProvider> = ArrayList()
     var allCat: ArrayList<ArrayList<ModelServiceProvider>> = ArrayList()
     var allUsers: ArrayList<ModelServiceProvider> = ArrayList()
-    var criminalLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var civilLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var humanRights: ArrayList<ModelServiceProvider> = ArrayList()
-    var maritime: ArrayList<ModelServiceProvider> = ArrayList()
-    var corporateAffairs: ArrayList<ModelServiceProvider> = ArrayList()
-    var InternationalAndCrossBorder: ArrayList<ModelServiceProvider> = ArrayList()
-    var debtRecovery: ArrayList<ModelServiceProvider> = ArrayList()
-    var litigationService: ArrayList<ModelServiceProvider> = ArrayList()
-    var offshoreLegal: ArrayList<ModelServiceProvider> = ArrayList()
-    var realEstateSolution: ArrayList<ModelServiceProvider> = ArrayList()
-    var titleDocumentRegsitration: ArrayList<ModelServiceProvider> = ArrayList()
-    var crossBorder: ArrayList<ModelServiceProvider> = ArrayList()
-    var purchaseOfLand: ArrayList<ModelServiceProvider> = ArrayList()
-    var companySecretarialService: ArrayList<ModelServiceProvider> = ArrayList()
-    var maritmeAndInternationalLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var legalDraftingAndContract: ArrayList<ModelServiceProvider> = ArrayList()
-    var familyLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var matrimonialCoursesAndChildRight: ArrayList<ModelServiceProvider> = ArrayList()
-    var humanRightsMatter: ArrayList<ModelServiceProvider> = ArrayList()
-    var intellectualPropertyLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var legalOpinions: ArrayList<ModelServiceProvider> = ArrayList()
-    var proBono: ArrayList<ModelServiceProvider> = ArrayList()
-    var entertainmentLaw: ArrayList<ModelServiceProvider> = ArrayList()
-    var sportsLaw: ArrayList<ModelServiceProvider> = ArrayList()
 
     var topRatedUsers: ArrayList<ModelServiceProvider> = ArrayList()
     var search: String? = null
@@ -79,8 +52,9 @@ class HomeFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater,R.layout.layout_home, container, false)
         serviceProviderRef = Firebase.database.getReference("ServiceProvider")
         search = requireArguments().getString("search")
-        if (search != null){
-            //searchDb()
+        if (!search!!.isEmpty()){
+            searchDb()
+            Toast.makeText(context, "search Db called", Toast.LENGTH_SHORT).show()
         }
         else{
             initPopularRecyclerView()
@@ -94,17 +68,8 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
-    private fun setUpViewPager(value: ArrayList<String>) {
-        for (i in value){
-            //binding.tabLayout.addTab(binding.tabLayout.newTab().setText(i.toString()))
-        }
-        var adapter = AllTabLayoutAdapter(context, value,allCat, this.parentFragmentManager)
-        binding.viewpagerAll.adapter = adapter
-        binding.viewpagerAll.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(binding.tabLayout))
-        binding.tabLayout.setupWithViewPager(binding.viewpagerAll)
-    }
 
-    /*private fun searchDb() {
+    private fun searchDb() {
         binding.tvPopular.visibility = View.GONE
         binding.tvGeneral.visibility = View.GONE
         binding.tvSearchResults.visibility = View.VISIBLE
@@ -125,13 +90,13 @@ class HomeFragment : Fragment() {
                 }
                 var adapterGeneral: AdapterItemGeneral = AdapterItemGeneral(context, allUsers)
 
-                //binding.rvAll.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-                //binding.rvAll.adapter = adapterGeneral
+                binding.rvAll.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                binding.rvAll.adapter = adapterGeneral
                 binding.rlLoading.visibility = View.GONE
             }
         }
         serviceProviderRef!!.addListenerForSingleValueEvent(postListener)
-    }*/
+    }
 
     private fun toggleAllRated(){
         binding.tvAllUsers.onClick {
@@ -197,7 +162,7 @@ class HomeFragment : Fragment() {
         allCat.clear()
         val postListener = object : ValueEventListener{
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                Toast.makeText(context, ""+error.message, Toast.LENGTH_SHORT).show()
             }
 
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -210,119 +175,16 @@ class HomeFragment : Fragment() {
                         if (singleUser.rating >= 4.0f){
                             topRatedUsers.add(singleUser!!)
                         }
-                        if (data.key!!.toString().equals("Criminal Law")){
-                            criminalLaw.add(singleUser)
-
-                        }
-                        else if (data.key!!.toString().equals("Civil Law")){
-                            civilLaw.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Human Rights")){
-                            humanRights.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Maritime")){
-                            maritime.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Corporate Affairs")){
-                            corporateAffairs.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("International and Cross Border Legal")){
-                            InternationalAndCrossBorder.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Debt  Recoveries")){
-                            debtRecovery.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Litigation Services")){
-                            litigationService.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Offshore Legal Representation")){
-                            offshoreLegal.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Real Estate Solutions")){
-                            realEstateSolution.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Title Documents Registration")){
-                            titleDocumentRegsitration.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Cross Border Real Estate Services")){
-                            crossBorder.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Purchase of land for Nigerians in the Diasporas")){
-                            purchaseOfLand.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Company Secretarial Services")){
-                            companySecretarialService.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Maritime and International Trade Laws")){
-                            maritmeAndInternationalLaw.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Legal drafting and contract documentations")){
-                            legalDraftingAndContract.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Family Law")){
-                            familyLaw.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Matrimonial Courses and Child Right Laws")){
-                            matrimonialCoursesAndChildRight.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Human Rights matter")){
-                            humanRightsMatter.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Intellectual Property Law")){
-                            intellectualPropertyLaw.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Legal Opinions on all areas of law")){
-                            legalOpinions.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("pro bono services")){
-                            proBono.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Entertainment law")){
-                            entertainmentLaw.add(singleUser)
-                        }
-                        else if (data.key!!.toString().equals("Sports law")){
-                            sportsLaw.add(singleUser)
-                        }
-                        allCat.add(criminalLaw)
-                        allCat.add(civilLaw)
-                        allCat.add(humanRights)
-                        allCat.add(maritime)
-                        allCat.add(corporateAffairs)
-                        allCat.add(InternationalAndCrossBorder)
-                        allCat.add(debtRecovery)
-                        allCat.add(litigationService)
-                        allCat.add(offshoreLegal)
-                        allCat.add(realEstateSolution)
-                        allCat.add(titleDocumentRegsitration)
-                        allCat.add(crossBorder)
-                        allCat.add(purchaseOfLand)
-                        allCat.add(companySecretarialService)
-                        allCat.add(maritmeAndInternationalLaw)
-                        allCat.add(legalDraftingAndContract)
-                        allCat.add(familyLaw)
-                        allCat.add(matrimonialCoursesAndChildRight)
-                        allCat.add(humanRightsMatter)
-                        allCat.add(intellectualPropertyLaw)
-                        allCat.add(legalOpinions)
-                        allCat.add(proBono)
-                        allCat.add(entertainmentLaw)
-                        allCat.add(sportsLaw)
-
+                        allUsers.add(singleUser!!)
                     }
                 }
                 var adapterPopular: AdapterItemPopular = AdapterItemPopular(context, popularUsers)
                 var adapterGeneral: AdapterItemGeneral = AdapterItemGeneral(context, allUsers)
                 var adapterItemTopRated: AdapterItemTopRated = AdapterItemTopRated(context, topRatedUsers)
                 binding.rvPopular.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+                binding.rvAll.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
                 binding.rvPopular.adapter = adapterPopular
-                val value:ArrayList<String> = arrayListOf("Criminal Law", "Civil Law", "Human Rights", "Maritime", "Corporate Affairs",
-                        "International and Cross Border Legal", "Debt  Recoveries", "Litigation Services", "Offshore Legal Representation",
-                        "Real Estate Solutions", "Title Documents Registration", "Cross Border Real Estate Services", "Purchase of land for Nigerians in the Diasporas",
-                        "Company Secretarial Services", "Maritime and International Trade Laws", "Legal drafting and contract documentations", "Family Law",
-                        "Matrimonial Courses and Child Right Laws", "Human Rights matter", "Intellectual Property Law", "Legal Opinions on all areas of law",
-                        "pro bono services", "Entertainment law", "Sports law")
-                setUpViewPager(value)
-
+                binding.rvAll.adapter = adapterGeneral
                 //binding.rvAll.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
                 //binding.rvAll.adapter = adapterGeneral
 

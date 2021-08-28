@@ -137,8 +137,7 @@
                         android:drawableEnd="@drawable/t12_ic_search"
                         android:drawableTint="@color/t12_textColorSecondary"
                         android:paddingStart="@dimen/t12_spacing_standard_new"
-                        android:paddingEnd="@dimen/t12_spacing_standard_new"
-                        android:visibility="gone"/>
+                        android:paddingEnd="@dimen/t12_spacing_standard_new" />
 
                 </RelativeLayout>
 
@@ -225,21 +224,10 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="12dp"
                             android:layout_marginBottom="@dimen/_90sdp" >
-                            <com.google.android.material.tabs.TabLayout
-                                android:id="@+id/tabLayout"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/t12_colorPrimary"
-                                android:background="@color/t12_colorPrimary"
-                                app:tabMode="scrollable"
-                                app:tabSelectedTextColor="@color/white"
-                                app:tabIndicator="@color/white"
-                                app:tabTextColor="@color/white"/>
-                            <androidx.viewpager.widget.ViewPager
-                                android:id="@+id/viewpager_all"
+                            <androidx.recyclerview.widget.RecyclerView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_below="@+id/tabLayout"/>
+                                android:id="@+id/rv_all"/>
                         </RelativeLayout>
                     </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView

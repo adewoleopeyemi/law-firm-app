@@ -1,7 +1,9 @@
 package com.example.successsynergyapp
 
+import android.content.DialogInterface
 import android.os.Bundle
 import android.os.Handler
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
@@ -40,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             search = intent.extras!!.getString("search").toString()
         }
         catch (e: Exception){
-
+            search = null
         }
         forWhat = intent.extras!!.getString("for").toString()
         var bundle = Bundle()
@@ -101,7 +103,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finishAffinity()
+        val dialogBuilder = AlertDialog.Builder(this!!)
+        dialogBuilder.setMessage("Do you want to quit? ")
+            // if the dialog is cancelable
+            .setCancelable(false)
+            .setNegativeButton("Yes", DialogInterface.OnClickListener {
+                dialog, which ->
+                finishAffinity()
+            })
+            .setPositiveButton("No", DialogInterface.OnClickListener {
+                    dialog, id ->
+                dialog.dismiss()
+            })
+
+        val alert = dialogBuilder.create()
+        alert.show()
     }
 
 }

@@ -8,13 +8,20 @@
         android:background="@color/Theme7_app_background"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/law_preview_img"
+            android:scaleType="centerCrop"/>
+
         <LinearLayout
             android:id="@+id/llTop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/Theme7_spacing_standard"
             android:layout_marginEnd="@dimen/Theme7_spacing_standard_new"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:elevation="1dp">
 
             <ImageView
                 android:id="@+id/ivClose"
@@ -46,7 +53,8 @@
             android:fontFamily="@font/abril_fatface"
             android:textColor="@color/Theme7_textColorPrimary"
             android:textSize="@dimen/Theme7_font_size_xlarge"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:elevation="@dimen/_1sdp"/>
 
         <com.yuyakaido.android.cardstackview.CardStackView
             android:id="@+id/cardStackView"
@@ -59,7 +67,8 @@
             android:layout_marginEnd="@dimen/Theme7_spacing_standard_new"
             android:layout_marginBottom="@dimen/Theme7_spacing_xlarge"
             android:clipToPadding="false"
-            android:padding="4dp" />
+            android:padding="4dp"
+            android:elevation="@dimen/_1sdp"/>
 
 
         <FrameLayout
@@ -72,6 +81,7 @@
             android:layout_marginEnd="@dimen/_16sdp"
             android:layout_marginBottom="@dimen/_16sdp"
             style="@style/Theme7Form_Card"
+            android:elevation="@dimen/_1sdp"
             >
             <RelativeLayout
                 android:id="@+id/btnLogin"

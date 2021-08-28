@@ -9,7 +9,7 @@
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/theme1_toolbar" />
+            layout="@layout/theme1_toolbar"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvAllForms"
@@ -18,7 +18,7 @@
             android:clipToPadding="false"
             android:layoutAnimation="@anim/theme1_layout_animation"
             android:overScrollMode="never"
-            android:paddingTop="@dimen/_16sdp" />
+            android:layout_marginTop="50dp"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fb_new_form"

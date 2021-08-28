@@ -58,6 +58,7 @@ class WalkThroughFragment (var page: Int) : Fragment() {
                     var i = Intent(context, MainActivity::class.java)
                     var forWhat = sharedPrefs!!.getString("userType", "").toString()
                     i.putExtra("for", forWhat)
+                    i.putExtra("search", "")
                     activity?.startActivity(i)
                 }
                 else{
@@ -70,7 +71,11 @@ class WalkThroughFragment (var page: Int) : Fragment() {
             val sharedPrefs = activity?.getSharedPreferences("SuccessSynergy", Context.MODE_PRIVATE)
             val hasLoggedIn = sharedPrefs?.getBoolean("HasLogggedIn", false)
             if (hasLoggedIn!!){
-                activity?.startActivity(Intent(context, MainActivity::class.java))
+                var i = Intent(context, MainActivity::class.java)
+                var forWhat = sharedPrefs!!.getString("userType", "").toString()
+                i.putExtra("for", forWhat)
+                i.putExtra("search", "")
+                activity?.startActivity(i)
             }
             else{
                 activity?.startActivity(Intent(context, UserTypeActivity::class.java))

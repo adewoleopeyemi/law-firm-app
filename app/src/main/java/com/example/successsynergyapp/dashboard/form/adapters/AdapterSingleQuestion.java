@@ -1,6 +1,7 @@
 package com.example.successsynergyapp.dashboard.form.adapters;
 
 import android.content.Context;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -28,6 +29,7 @@ public class AdapterSingleQuestion extends RecyclerView.Adapter<AdapterSingleQue
     ArrayList<SingleQuestionModel> questions;
     Context context;
     SingleQuestionModel curQuestionAns = new SingleQuestionModel();
+    Boolean notStartedTyping = true;
 
     public AdapterSingleQuestion(ArrayList<SingleQuestionModel> questions, Context context) {
         this.questions = questions;
@@ -42,9 +44,11 @@ public class AdapterSingleQuestion extends RecyclerView.Adapter<AdapterSingleQue
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
+        holder.et_answer.setText("");
+        holder.et_answer.setHint("Please type your answer here");
         holder.tv_question.setText(questions.get(position).getQuestion());
         curQuestionAns = questions.get(holder.getLayoutPosition());
-        if (questions.get(holder.position).getRequiresTyping()){
+        if (questions.get(position).getRequiresTyping()){
             holder.btn_yes.setVisibility(GONE);
             holder.btn_no.setVisibility(GONE);
             holder.et_answer.setVisibility(View.VISIBLE);
@@ -55,7 +59,9 @@ public class AdapterSingleQuestion extends RecyclerView.Adapter<AdapterSingleQue
 
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    notStartedTyping = false;
                     curQuestionAns.setAnswer(s.toString());
+                    curQuestionAns.setPosition(position);
                 }
 
                 @Override
@@ -71,9 +77,11 @@ public class AdapterSingleQuestion extends RecyclerView.Adapter<AdapterSingleQue
             holder.btn_yes.setOnCheckedChangeListener((buttonView, isChecked) -> {
                 if (isChecked){
                     curQuestionAns.setAnswer("Yes");
+                    curQuestionAns.setPosition(position);
                 }
                 else{
                     curQuestionAns.setAnswer("No");
+                    curQuestionAns.setPosition(position);
                 }
             });
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class ModelForm implements Serializable {
     String first_name, surname, Location, State, email_address, phone_number;
-    String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed;
+    String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed, status;
 
     public String getAgreed() {
         return agreed;
@@ -84,6 +84,14 @@ public class ModelForm implements Serializable {
         return State;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public void setState(String state) {
         State = state;
     }
@@ -128,11 +136,5 @@ public class ModelForm implements Serializable {
         this.consent = consent;
     }
 
-    public boolean isIntend_to_balance() {
-        return intend_to_balance;
-    }
 
-    public void setIntend_to_balance(boolean intend_to_balance) {
-        this.intend_to_balance = intend_to_balance;
-    }
 }

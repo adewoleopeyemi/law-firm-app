@@ -7,6 +7,7 @@
     android:background="@color/white"
     android:text="All Forms"
     android:textColor="@color/t12_textColorSecondary"
+    android:layout_marginTop="20dp"
     android:textAlignment="center"
     app:titleTextColor="@color/Theme1_textColorPrimary"
     android:theme="@style/Theme1Theme.AppBarOverlay"/>

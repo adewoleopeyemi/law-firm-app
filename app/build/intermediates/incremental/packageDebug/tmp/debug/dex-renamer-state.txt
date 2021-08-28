@@ -1,0 +1,10 @@
+#Sat Aug 28 19:03:49 WAT 2021
+base.2=/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+path.2=classes2.dex
+base.1=/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+path.1=classes.dex
+base.0=/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

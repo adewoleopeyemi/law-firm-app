@@ -90,6 +90,7 @@
                     android:paddingEnd="@dimen/_30sdp"
                     android:paddingBottom="@dimen/_10sdp"
                     android:textSize="@dimen/t6_font_normal"
+                    android:textColor="@color/white"
                     android:backgroundTint="@color/t12_colorPrimary"
                     android:text="@string/t6_get_started" />
 
