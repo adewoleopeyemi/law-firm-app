@@ -13,7 +13,7 @@
     <color name="Theme3_app_background">#f8f8f8</color>
     <color name="T6ColorPrimaryDark">#2F95A1</color>
     <color name="T6ColorAccent">#2F95A1</color>
-    <color name="colorPrimaryDark">@android:color/background_light</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
     <color name="transparent">#00000000</color>
     <color name="T6Black">@android:color/background_dark</color>
     <color name="T6White">@android:color/background_light</color>

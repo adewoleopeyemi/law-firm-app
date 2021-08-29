@@ -8,10 +8,8 @@ com/example/successsynergyapp/databinding/ActivityUserFormBinding.java
  com.example.successsynergyapp.databinding.ActivityUserFormBinding
 com/example/successsynergyapp/databinding/ActivityUserFormBindingImpl.java
  com.example.successsynergyapp.databinding.ActivityUserFormBindingImpl
-com/example/successsynergyapp/auth/UserTypeActivity.java
- com.example.successsynergyapp.auth.UserTypeActivity
- com.example.successsynergyapp.auth.UserTypeActivity$1
- com.example.successsynergyapp.auth.UserTypeActivity$2
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 com/example/successsynergyapp/databinding/LayoutUserProfileBindingImpl.java
@@ -22,13 +20,12 @@ com/example/successsynergyapp/databinding/ActivityMainBindingImpl.java
  com.example.successsynergyapp.databinding.ActivityMainBindingImpl
 com/example/successsynergyapp/databinding/LayoutHomeBinding.java
  com.example.successsynergyapp.databinding.LayoutHomeBinding
+com/example/successsynergyapp/databinding/LayoutFormDetailBinding.java
+ com.example.successsynergyapp.databinding.LayoutFormDetailBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
-com/example/successsynergyapp/dashboard/home/search/SearchActivity.java
- com.example.successsynergyapp.dashboard.home.search.SearchActivity
- com.example.successsynergyapp.dashboard.home.search.SearchActivity$1
- com.example.successsynergyapp.dashboard.home.search.SearchActivity$2
- com.example.successsynergyapp.dashboard.home.search.SearchActivity$3
+com/example/successsynergyapp/databinding/FragmentLoginBindingImpl.java
+ com.example.successsynergyapp.databinding.FragmentLoginBindingImpl
 com/example/successsynergyapp/databinding/FragmentProfileBinding.java
  com.example.successsynergyapp.databinding.FragmentProfileBinding
 com/example/successsynergyapp/dashboard/home/adpaters/AllTabLayoutAdapter.java
@@ -45,6 +42,8 @@ com/example/successsynergyapp/databinding/ActivityWalkThroughBinding.java
  com.example.successsynergyapp.databinding.ActivityWalkThroughBinding
 com/example/successsynergyapp/databinding/LayoutItemPopularBindingImpl.java
  com.example.successsynergyapp.databinding.LayoutItemPopularBindingImpl
+com/example/successsynergyapp/databinding/LayoutFormDetailBindingImpl.java
+ com.example.successsynergyapp.databinding.LayoutFormDetailBindingImpl
 com/example/successsynergyapp/databinding/LayoutItemGeneralBinding.java
  com.example.successsynergyapp.databinding.LayoutItemGeneralBinding
 com/example/successsynergyapp/model/ModelForm.java
@@ -60,14 +59,11 @@ com/example/successsynergyapp/databinding/LayoutUserProfileBinding.java
  com.example.successsynergyapp.databinding.LayoutUserProfileBinding
 com/example/successsynergyapp/databinding/FragmentAccountDetails2Binding.java
  com.example.successsynergyapp.databinding.FragmentAccountDetails2Binding
-com/example/successsynergyapp/dashboard/home/adpaters/AdapterItemGeneral.java
- com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral
- com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral$Holder
-com/example/successsynergyapp/auth/AccountDetails2Fragment.java
- com.example.successsynergyapp.auth.AccountDetails2Fragment
- com.example.successsynergyapp.auth.AccountDetails2Fragment$1
- com.example.successsynergyapp.auth.AccountDetails2Fragment$2
- com.example.successsynergyapp.auth.AccountDetails2Fragment$3
+com/example/successsynergyapp/dashboard/home/adpaters/AdapterItemPopular.java
+ com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemPopular
+ com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemPopular$Holder
+com/example/successsynergyapp/databinding/FragmentIndividualAllBinding.java
+ com.example.successsynergyapp.databinding.FragmentIndividualAllBinding
 com/example/successsynergyapp/utils/RealPathUtils.java
  com.example.successsynergyapp.utils.RealPathUtils
 com/example/successsynergyapp/utils/test.java
@@ -113,8 +109,8 @@ com/example/successsynergyapp/databinding/FragmentProfileBindingImpl.java
  com.example.successsynergyapp.databinding.FragmentProfileBindingImpl
 com/example/successsynergyapp/dashboard/form/adapters/AdapterSingleForm.java
  com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleForm
- com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleForm$1
  com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleForm$holder
+ com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleForm$onAdapterClicked
 com/example/successsynergyapp/databinding/FragmentAccountDetailsBinding.java
  com.example.successsynergyapp.databinding.FragmentAccountDetailsBinding
 com/example/successsynergyapp/model/ModelUser.java
@@ -141,16 +137,24 @@ com/example/successsynergyapp/databinding/LayoutSearchBinding.java
  com.example.successsynergyapp.databinding.LayoutSearchBinding
 com/example/successsynergyapp/utils/AllPermissionsUtils.java
  com.example.successsynergyapp.utils.AllPermissionsUtils
-com/example/successsynergyapp/dashboard/home/IndividualAllFragment.java
- com.example.successsynergyapp.dashboard.home.IndividualAllFragment
-com/example/successsynergyapp/databinding/FragmentLoginBindingImpl.java
- com.example.successsynergyapp.databinding.FragmentLoginBindingImpl
-com/example/successsynergyapp/dashboard/home/adpaters/AdapterItemPopular.java
- com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemPopular
- com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemPopular$Holder
 com/example/successsynergyapp/BuildConfig.java
  com.example.successsynergyapp.BuildConfig
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-com/example/successsynergyapp/databinding/FragmentIndividualAllBinding.java
- com.example.successsynergyapp.databinding.FragmentIndividualAllBinding
+com/example/successsynergyapp/auth/AccountDetails2Fragment.java
+ com.example.successsynergyapp.auth.AccountDetails2Fragment
+ com.example.successsynergyapp.auth.AccountDetails2Fragment$1
+ com.example.successsynergyapp.auth.AccountDetails2Fragment$2
+ com.example.successsynergyapp.auth.AccountDetails2Fragment$3
+com/example/successsynergyapp/auth/UserTypeActivity.java
+ com.example.successsynergyapp.auth.UserTypeActivity
+ com.example.successsynergyapp.auth.UserTypeActivity$1
+ com.example.successsynergyapp.auth.UserTypeActivity$2
+com/example/successsynergyapp/dashboard/home/IndividualAllFragment.java
+ com.example.successsynergyapp.dashboard.home.IndividualAllFragment
+com/example/successsynergyapp/dashboard/home/adpaters/AdapterItemGeneral.java
+ com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral
+ com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral$Holder
+com/example/successsynergyapp/dashboard/home/search/SearchActivity.java
+ com.example.successsynergyapp.dashboard.home.search.SearchActivity
+ com.example.successsynergyapp.dashboard.home.search.SearchActivity$1
+ com.example.successsynergyapp.dashboard.home.search.SearchActivity$2
+ com.example.successsynergyapp.dashboard.home.search.SearchActivity$3

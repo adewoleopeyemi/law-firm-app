@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.successsynergyapp.R;
 import com.example.successsynergyapp.model.ModelForm;
@@ -19,10 +20,14 @@ import java.util.ArrayList;
 public class AdapterSingleForm extends RecyclerView.Adapter<AdapterSingleForm.holder>{
     Context context;
     ArrayList<ModelForm> forms;
+    onAdapterClicked listener;
+    boolean onForm = false;
+    int prevPosition;
 
-    public AdapterSingleForm(Context context, ArrayList<ModelForm> forms) {
+    public AdapterSingleForm(Context context, ArrayList<ModelForm> forms, onAdapterClicked listener) {
         this.context = context;
         this.forms = forms;
+        this.listener = listener;
     }
 
     @NonNull
@@ -39,11 +44,16 @@ public class AdapterSingleForm extends RecyclerView.Adapter<AdapterSingleForm.ho
         holder.tvBudget.setText(forms.get(position).getBudget());
         holder.tvBulletPoint.setText(forms.get(position).getBullet_point());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Link to Activity for approving form and rating
+        holder.itemView.setOnClickListener(v -> {
+            //Link to Activity for approving form and rating
+            if (prevPosition != position){
+
             }
+            else{
+                onForm = !onForm;
+            }
+            listener.onFormClicked(onForm, forms.get(position));
+            prevPosition = position;
         });
     }
 
@@ -61,5 +71,9 @@ public class AdapterSingleForm extends RecyclerView.Adapter<AdapterSingleForm.ho
             tvBudget = itemView.findViewById(R.id.tv_budget);
             tvBulletPoint = itemView.findViewById(R.id.tv_bullet_point);
         }
+    }
+
+    public interface onAdapterClicked{
+        void onFormClicked(Boolean clicked, ModelForm form);
     }
 }

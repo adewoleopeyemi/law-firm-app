@@ -12,12 +12,12 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_search.xml.flat",
-        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_search.xml"
-    },
-    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_bg_back_button.xml.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/bg_back_button.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_search.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_search.xml"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_ic_security.xml.flat",
@@ -32,12 +32,12 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_single_form.xml"
     },
     {
-        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_home.xml.flat",
-        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_home.xml"
-    },
-    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_ic_home.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_ic_home.xml"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_button_round.xml.flat",
@@ -60,12 +60,12 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/t12_bg_bottom_shadow.xml"
     },
     {
-        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_item_shadow.xml.flat",
-        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_item_shadow.xml"
-    },
-    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/font_assistant_light.xml.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/font/assistant_light.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_theme3_item_shadow.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable-v24/theme3_item_shadow.xml"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_test_law_profile.jpeg.flat",
@@ -254,6 +254,10 @@
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_theme3_toolbar.xml.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/theme3_toolbar.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/layout_layout_form_detail.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_form_detail.xml"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_law_related_auth.jpeg.flat",
@@ -516,6 +520,10 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_account_details2.xml"
     },
     {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_rounded_corners_top.xml.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/rounded_corners_top.xml"
+    },
+    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
@@ -574,6 +582,10 @@
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable_theme6_bg_white_rounded.xml.flat",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/drawable/theme6_bg_white_rounded.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/raw_success_synergy_no_data_found.json.flat",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/raw/success_synergy_no_data_found.json"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/res/merged/debug/drawable-v24_t12_bg_btn.xml.flat",

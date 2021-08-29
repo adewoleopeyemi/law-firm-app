@@ -1,10 +1,12 @@
 package com.example.successsynergyapp.dashboard.form
 
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
@@ -23,18 +25,24 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 
-class FormFragment : Fragment() {
+class FormFragment : Fragment(), AdapterSingleForm.onAdapterClicked {
     lateinit var binding: FragmentFormBinding
     lateinit var firebaseRef: DatabaseReference
     var allForms = ArrayList<ModelForm>()
+    lateinit var pd: ProgressDialog
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_form, container, false)
         firebaseRef = Firebase.database.reference.child("Forms")
+        pd = ProgressDialog(activity)
+        pd.setCancelable(false)
+        pd.setMessage("Loading all your forms.....")
+        pd.show()
         fetchAllForms()
         binding.fbNewForm.onClick {
             startActivity(Intent(requireActivity(), UserFormActivity::class.java))
+            onDestroy()
         }
         return binding.root
     }
@@ -42,10 +50,12 @@ class FormFragment : Fragment() {
     private fun fetchAllForms() {
         val postListener = object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(context, ""+error.message, Toast.LENGTH_SHORT).show()
+                pd.dismiss()
+                Toast.makeText(context, "Something went wrong please try again", Toast.LENGTH_SHORT).show()
             }
 
             override fun onDataChange(snapshot: DataSnapshot) {
+                pd.dismiss()
                 for (data in snapshot.children){
                     if (data.key.toString().equals(FirebaseAuth.getInstance().currentUser!!.uid)){
                         for (form in data.children){
@@ -54,11 +64,47 @@ class FormFragment : Fragment() {
                         }
                     }
                 }
-                var adapter = AdapterSingleForm(context, allForms);
-                binding.rvAllForms.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-                binding.rvAllForms.adapter = adapter
+                if (allForms.size == 0){
+                    binding.rlNoForm.visibility = VISIBLE
+                }
+                else{
+                    var adapter = AdapterSingleForm(context, allForms, this@FormFragment);
+                    binding.rvAllForms.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                    binding.rvAllForms.adapter = adapter
+                }
             }
         }
         firebaseRef.addListenerForSingleValueEvent(postListener)
+    }
+
+    fun hideFormDetail(){
+        binding.formDetail.root.animate()
+            .translationY(binding.formDetail.root.getHeight().toFloat())
+            .alpha(1.0f)
+            .setListener(null)
+    }
+    fun showFormDetail(){
+        binding.formDetail.root.setVisibility(View.VISIBLE)
+
+        binding.formDetail.root.animate()
+            .translationY(0f)
+            .alpha(1.0f)
+            .setListener(null)
+    }
+
+    override fun onFormClicked(clicked: Boolean?, form: ModelForm?) {
+        if (clicked!!){
+            binding.formDetail.tvAnswerFirstName.text = form!!.first_name
+            binding.formDetail.tvAnswerLastName.text = form!!.surname
+            binding.formDetail.tvAnswerBudget.text = form!!.budget
+            binding.formDetail.tvCategory.text = form!!.type_of_service
+            binding.formDetail.tvAnswerStatus.text = form!!.status
+            binding.formDetail.tvAnswerBulletPoint.text = form!!.bullet_point
+            showFormDetail()
+            binding.rlAll.onClick { hideFormDetail() }
+        }
+        else{
+            hideFormDetail()
+        }
     }
 }

@@ -12,31 +12,36 @@ public class FragmentFormBindingImpl extends FragmentFormBinding  {
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = null;
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(6);
+        sIncludes.setIncludes(0, 
+            new String[] {"layout_form_detail"},
+            new int[] {2},
+            new int[] {com.example.successsynergyapp.R.layout.layout_form_detail});
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.toolbar, 1);
-        sViewsWithIds.put(R.id.rvAllForms, 2);
-        sViewsWithIds.put(R.id.fb_new_form, 3);
+        sViewsWithIds.put(R.id.rl_no_form, 3);
+        sViewsWithIds.put(R.id.rvAllForms, 4);
+        sViewsWithIds.put(R.id.fb_new_form, 5);
     }
     // views
-    @NonNull
-    private final android.widget.RelativeLayout mboundView0;
     // variables
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public FragmentFormBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private FragmentFormBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
-        super(bindingComponent, root, 0
-            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[3]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+        super(bindingComponent, root, 1
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[5]
+            , (com.example.successsynergyapp.databinding.LayoutFormDetailBinding) bindings[2]
+            , (android.widget.RelativeLayout) bindings[0]
+            , (android.widget.RelativeLayout) bindings[3]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[4]
             , (android.view.View) bindings[1]
             );
-        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
-        this.mboundView0.setTag(null);
+        this.rlAll.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -45,8 +50,9 @@ public class FragmentFormBindingImpl extends FragmentFormBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x1L;
+                mDirtyFlags = 0x2L;
         }
+        formDetail.invalidateAll();
         requestRebind();
     }
 
@@ -56,6 +62,9 @@ public class FragmentFormBindingImpl extends FragmentFormBinding  {
             if (mDirtyFlags != 0) {
                 return true;
             }
+        }
+        if (formDetail.hasPendingBindings()) {
+            return true;
         }
         return false;
     }
@@ -67,8 +76,25 @@ public class FragmentFormBindingImpl extends FragmentFormBinding  {
     }
 
     @Override
+    public void setLifecycleOwner(@Nullable androidx.lifecycle.LifecycleOwner lifecycleOwner) {
+        super.setLifecycleOwner(lifecycleOwner);
+        formDetail.setLifecycleOwner(lifecycleOwner);
+    }
+
+    @Override
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
+            case 0 :
+                return onChangeFormDetail((com.example.successsynergyapp.databinding.LayoutFormDetailBinding) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeFormDetail(com.example.successsynergyapp.databinding.LayoutFormDetailBinding FormDetail, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
         }
         return false;
     }
@@ -81,13 +107,15 @@ public class FragmentFormBindingImpl extends FragmentFormBinding  {
             mDirtyFlags = 0;
         }
         // batch finished
+        executeBindingsOn(formDetail);
     }
     // Listener Stub Implementations
     // callback impls
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): null
+        flag 0 (0x1L): formDetail
+        flag 1 (0x2L): null
     flag mapping end*/
     //end
 }

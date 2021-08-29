@@ -92,6 +92,7 @@ class LoginFragment : Fragment() {
                                                 pd?.dismiss()
                                                 var i = Intent(context, MainActivity::class.java)
                                                 i.putExtra("for", "ServiceProvider")
+
                                                 activity?.startActivity(i)
                                             }
                                             else{

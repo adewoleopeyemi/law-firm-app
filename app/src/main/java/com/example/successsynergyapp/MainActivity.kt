@@ -3,6 +3,7 @@ package com.example.successsynergyapp
 import android.content.DialogInterface
 import android.os.Bundle
 import android.os.Handler
+import android.text.Html
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -20,7 +21,7 @@ import com.example.successsynergyapp.extensions.replaceFragment
 import com.example.successsynergyapp.utils.theme3bottomnavigation.BottomNavigation
 import kotlinx.android.synthetic.main.theme3_toolbar.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Theme6BaseActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var homeFragment: HomeFragment
     lateinit var profileFragment: ProfileFragment
@@ -104,17 +105,16 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val dialogBuilder = AlertDialog.Builder(this!!)
-        dialogBuilder.setMessage("Do you want to quit? ")
+        dialogBuilder.setMessage("Do you want to quit my lawyer app? ")
             // if the dialog is cancelable
             .setCancelable(false)
-            .setNegativeButton("Yes", DialogInterface.OnClickListener {
-                dialog, which ->
-                finishAffinity()
-            })
-            .setPositiveButton("No", DialogInterface.OnClickListener {
-                    dialog, id ->
+            .setPositiveButton(Html.fromHtml("<font color='#B2020005'>No</font>")) { dialog, id ->
                 dialog.dismiss()
-            })
+            }
+            .setNegativeButton(Html.fromHtml("<font color='#B2020005'>Yes</font>")) { dialog, which ->
+                finishAffinity()
+            }
+
 
         val alert = dialogBuilder.create()
         alert.show()

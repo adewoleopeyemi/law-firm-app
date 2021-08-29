@@ -52,6 +52,10 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_login.xml"
     },
     {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_form_detail.xml",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_form_detail.xml"
+    },
+    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_single_form_question.xml",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_single_form_question.xml"
     },

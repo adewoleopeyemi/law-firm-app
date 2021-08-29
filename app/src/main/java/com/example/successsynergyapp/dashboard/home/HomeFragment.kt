@@ -52,9 +52,8 @@ class HomeFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater,R.layout.layout_home, container, false)
         serviceProviderRef = Firebase.database.getReference("ServiceProvider")
         search = requireArguments().getString("search")
-        if (!search!!.isEmpty()){
+        if (search == null){
             searchDb()
-            Toast.makeText(context, "search Db called", Toast.LENGTH_SHORT).show()
         }
         else{
             initPopularRecyclerView()

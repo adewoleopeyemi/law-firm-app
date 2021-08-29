@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.successsynergyapp.R
+import com.example.successsynergyapp.auth.Theme6BaseActivity
 import com.example.successsynergyapp.dashboard.form.adapters.AdapterSingleQuestion
 import com.example.successsynergyapp.databinding.ActivityUserFormBinding
 import com.example.successsynergyapp.databinding.LayoutSingleFormQuestionBinding
@@ -33,7 +34,7 @@ import com.yuyakaido.android.cardstackview.*
 import kotlinx.android.synthetic.main.layout_single_form_question.*
 import kotlinx.android.synthetic.main.layout_single_form_question.view.*
 
-class UserFormActivity : AppCompatActivity() {
+class UserFormActivity : Theme6BaseActivity() {
     lateinit var binding: ActivityUserFormBinding
     private var mProgress = 0
     private var mSize = 0

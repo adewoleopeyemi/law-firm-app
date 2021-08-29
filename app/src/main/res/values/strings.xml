@@ -166,4 +166,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem 
     <string name="please_type_your_answers_here">Please type your answers here</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="crimanal_law">Criminal law</string>
+    <string name="first_name">First name: </string>
+    <string name="adewole_opeyemi">Adewole Opeyemi</string>
+    <string name="last_name">Last name:</string>
+    <string name="budget">Budget:</string>
+    <string name="bullet_point">Bullet Point:</string>
+    <string name="status">Status:</string>
 </resources>

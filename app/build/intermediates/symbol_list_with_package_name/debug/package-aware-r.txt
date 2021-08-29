@@ -2723,6 +2723,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable outline_person_gray
+drawable rounded_corners_top
 drawable social_login_2
 drawable t12_bg_bottom_shadow
 drawable t12_bg_btn
@@ -3011,6 +3012,7 @@ id flex_start
 id flip
 id floating
 id forever
+id form_detail
 id fragment_container_view_tag
 id frameLayout
 id ghost_view
@@ -3197,11 +3199,13 @@ id right_icon
 id right_overlay
 id right_side
 id rl
+id rlAll
 id rlImg
 id rlStep
 id rlToolbar
 id rlTop
 id rl_loading
+id rl_no_form
 id roll_call_number
 id rounded
 id row
@@ -3347,6 +3351,11 @@ id tvToolBarTitle
 id tvUserEmail
 id tvUserName
 id tv_all_users
+id tv_answer_budget
+id tv_answer_bullet_point
+id tv_answer_first_name
+id tv_answer_last_name
+id tv_answer_status
 id tv_budget
 id tv_bullet_point
 id tv_category
@@ -3355,7 +3364,9 @@ id tv_decription
 id tv_description
 id tv_edit_profile
 id tv_email
+id tv_first_name
 id tv_general
+id tv_last_name
 id tv_last_search_category
 id tv_last_search_name
 id tv_location
@@ -3379,6 +3390,10 @@ id v_circle
 id vertical
 id view1
 id view2
+id view3
+id view4
+id view5
+id view6
 id viewPager
 id view_offset_helper
 id view_tree_lifecycle_owner
@@ -3491,6 +3506,7 @@ layout fragment_login
 layout fragment_profile
 layout fragment_sign_up
 layout fragment_walk_through
+layout layout_form_detail
 layout layout_home
 layout layout_item_general
 layout layout_item_home_top_rated
@@ -3587,6 +3603,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw law_loading
+raw success_synergy_no_data_found
 string _1
 string _3
 string abc_action_bar_home_description
@@ -3617,11 +3634,14 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string address
+string adewole_opeyemi
 string app_name
 string appbar_scrolling_view_behavior
 string baggar_fee_information
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string budget
+string bullet_point
 string chamber
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -3647,6 +3667,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string complete_registration
+string crimanal_law
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3654,6 +3675,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string fcm_fallback_notification_channel_label
 string firebase_database_url
+string first_name
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -3663,6 +3685,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string last_name
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -3728,6 +3751,7 @@ string search
 string search_menu_title
 string service_provider_details
 string state_justification
+string status
 string status_bar_notification_info_overflow
 string t11_note_toc
 string t12_150

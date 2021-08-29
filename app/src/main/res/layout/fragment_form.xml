@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:id="@+id/rlAll">
 
         <include
             android:id="@+id/toolbar"
             layout="@layout/theme1_toolbar"/>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_no_form"
+            android:visibility="gone"
+            >
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                app:lottie_rawRes="@raw/success_synergy_no_data_found"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+        </RelativeLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvAllForms"
             android:layout_width="match_parent"
@@ -31,6 +46,12 @@
             android:layout_marginBottom="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="30dp"/>
-
+        <include
+            android:id="@+id/form_detail"
+            layout="@layout/layout_form_detail"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"/>
     </RelativeLayout>
 </layout>

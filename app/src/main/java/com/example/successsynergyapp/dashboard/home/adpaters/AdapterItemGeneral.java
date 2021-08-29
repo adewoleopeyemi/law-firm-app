@@ -39,7 +39,7 @@ public class AdapterItemGeneral extends RecyclerView.Adapter<AdapterItemGeneral.
         holder.category.setText(users.get(position).getCategory());
         holder.rating.setRating(users.get(position).getRating());
         holder.location.setText(users.get(position).getState());
-        Glide.with(context).load(users.get(position).getCor_profile()).placeholder(R.drawable.test_law_profile).into(holder.profile);
+        Glide.with(context).load(users.get(position).getCor_profile()).placeholder(R.color.colorPrimaryDark).into(holder.profile);
     }
 
     @Override

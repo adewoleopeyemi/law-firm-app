@@ -4,6 +4,7 @@ package com.example.successsynergyapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -19,15 +20,29 @@ public abstract class FragmentFormBinding extends ViewDataBinding {
   public final FloatingActionButton fbNewForm;
 
   @NonNull
+  public final LayoutFormDetailBinding formDetail;
+
+  @NonNull
+  public final RelativeLayout rlAll;
+
+  @NonNull
+  public final RelativeLayout rlNoForm;
+
+  @NonNull
   public final RecyclerView rvAllForms;
 
   @NonNull
   public final View toolbar;
 
   protected FragmentFormBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FloatingActionButton fbNewForm, RecyclerView rvAllForms, View toolbar) {
+      FloatingActionButton fbNewForm, LayoutFormDetailBinding formDetail, RelativeLayout rlAll,
+      RelativeLayout rlNoForm, RecyclerView rvAllForms, View toolbar) {
     super(_bindingComponent, _root, _localFieldCount);
     this.fbNewForm = fbNewForm;
+    this.formDetail = formDetail;
+    setContainedBinding(this.formDetail);
+    this.rlAll = rlAll;
+    this.rlNoForm = rlNoForm;
     this.rvAllForms = rvAllForms;
     this.toolbar = toolbar;
   }

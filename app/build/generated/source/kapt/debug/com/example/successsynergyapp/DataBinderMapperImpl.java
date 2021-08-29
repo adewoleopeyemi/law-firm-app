@@ -21,6 +21,7 @@ import com.example.successsynergyapp.databinding.FragmentLoginBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentProfileBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentSignUpBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentWalkThroughBindingImpl;
+import com.example.successsynergyapp.databinding.LayoutFormDetailBindingImpl;
 import com.example.successsynergyapp.databinding.LayoutHomeBindingImpl;
 import com.example.successsynergyapp.databinding.LayoutItemGeneralBindingImpl;
 import com.example.successsynergyapp.databinding.LayoutItemPopularBindingImpl;
@@ -69,21 +70,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTWALKTHROUGH = 15;
 
-  private static final int LAYOUT_LAYOUTHOME = 16;
+  private static final int LAYOUT_LAYOUTFORMDETAIL = 16;
 
-  private static final int LAYOUT_LAYOUTITEMGENERAL = 17;
+  private static final int LAYOUT_LAYOUTHOME = 17;
 
-  private static final int LAYOUT_LAYOUTITEMPOPULAR = 18;
+  private static final int LAYOUT_LAYOUTITEMGENERAL = 18;
 
-  private static final int LAYOUT_LAYOUTITEMSEARCH = 19;
+  private static final int LAYOUT_LAYOUTITEMPOPULAR = 19;
 
-  private static final int LAYOUT_LAYOUTSEARCH = 20;
+  private static final int LAYOUT_LAYOUTITEMSEARCH = 20;
 
-  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 21;
+  private static final int LAYOUT_LAYOUTSEARCH = 21;
 
-  private static final int LAYOUT_LAYOUTUSERPROFILE = 22;
+  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 22;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(22);
+  private static final int LAYOUT_LAYOUTUSERPROFILE = 23;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(23);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_edit_profile, LAYOUT_ACTIVITYEDITPROFILE);
@@ -101,6 +104,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_sign_up, LAYOUT_FRAGMENTSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_walk_through, LAYOUT_FRAGMENTWALKTHROUGH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_form_detail, LAYOUT_LAYOUTFORMDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_home, LAYOUT_LAYOUTHOME);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_item_general, LAYOUT_LAYOUTITEMGENERAL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_item_popular, LAYOUT_LAYOUTITEMPOPULAR);
@@ -209,6 +213,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for fragment_walk_through is invalid. Received: " + tag);
         }
+        case  LAYOUT_LAYOUTFORMDETAIL: {
+          if ("layout/layout_form_detail_0".equals(tag)) {
+            return new LayoutFormDetailBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for layout_form_detail is invalid. Received: " + tag);
+        }
         case  LAYOUT_LAYOUTHOME: {
           if ("layout/layout_home_0".equals(tag)) {
             return new LayoutHomeBindingImpl(component, view);
@@ -304,7 +314,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(22);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(23);
 
     static {
       sKeys.put("layout/activity_edit_profile_0", com.example.successsynergyapp.R.layout.activity_edit_profile);
@@ -322,6 +332,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_profile_0", com.example.successsynergyapp.R.layout.fragment_profile);
       sKeys.put("layout/fragment_sign_up_0", com.example.successsynergyapp.R.layout.fragment_sign_up);
       sKeys.put("layout/fragment_walk_through_0", com.example.successsynergyapp.R.layout.fragment_walk_through);
+      sKeys.put("layout/layout_form_detail_0", com.example.successsynergyapp.R.layout.layout_form_detail);
       sKeys.put("layout/layout_home_0", com.example.successsynergyapp.R.layout.layout_home);
       sKeys.put("layout/layout_item_general_0", com.example.successsynergyapp.R.layout.layout_item_general);
       sKeys.put("layout/layout_item_popular_0", com.example.successsynergyapp.R.layout.layout_item_popular);
