@@ -119,5 +119,4 @@ class MainActivity : Theme6BaseActivity() {
         val alert = dialogBuilder.create()
         alert.show()
     }
-
 }
