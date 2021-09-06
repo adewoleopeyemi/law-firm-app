@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.successsynergyapp"
+        applicationId "com.successsynergy.mylawyerapp"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1

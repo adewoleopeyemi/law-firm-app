@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.successsynergyapp",
+  "applicationId": "com.successsynergy.mylawyerapp",
   "variantName": "debug",
   "elements": [
     {

@@ -1,34 +1,63 @@
 {
   "project_info": {
-    "project_number": "423863668147",
-    "firebase_url": "https://sucessapp-dd1ed-default-rtdb.firebaseio.com",
-    "project_id": "sucessapp-dd1ed",
-    "storage_bucket": "sucessapp-dd1ed.appspot.com"
+    "project_number": "298034549602",
+    "firebase_url": "https://mylawyerapp-8fe7a-default-rtdb.firebaseio.com",
+    "project_id": "mylawyerapp-8fe7a",
+    "storage_bucket": "mylawyerapp-8fe7a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:423863668147:android:f5b15914e6b69132394fc6",
+        "mobilesdk_app_id": "1:298034549602:android:d693fcc60105e305d3123b",
         "android_client_info": {
-          "package_name": "com.example.successsynergyapp"
+          "package_name": "com.successsynergy.mylawyerapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "423863668147-mhsd50omdstvmti5noi1gefn812qaq8j.apps.googleusercontent.com",
+          "client_id": "298034549602-lapuiimmikg3clviat61uu2bj1ckc44g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDw-YYpHdOTrv607dvdtqNgzGIINadh-Is"
+          "current_key": "AIzaSyChJ2rW5O6Wxg7Yi3kO9FgFA_8Kuw-aXZ4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "423863668147-mhsd50omdstvmti5noi1gefn812qaq8j.apps.googleusercontent.com",
+              "client_id": "298034549602-lapuiimmikg3clviat61uu2bj1ckc44g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298034549602:android:f3865280a7161a54d3123b",
+        "android_client_info": {
+          "package_name": "com.successsynergy.mylawyerappadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298034549602-lapuiimmikg3clviat61uu2bj1ckc44g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChJ2rW5O6Wxg7Yi3kO9FgFA_8Kuw-aXZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298034549602-lapuiimmikg3clviat61uu2bj1ckc44g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

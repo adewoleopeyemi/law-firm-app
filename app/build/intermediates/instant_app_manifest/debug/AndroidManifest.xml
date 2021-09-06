@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.successsynergyapp"
+    package="com.successsynergy.mylawyerapp"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -31,6 +31,7 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.SuccessSynergyApp" >
         <activity android:name="com.example.successsynergyapp.dashboard.form.UserFormActivity" />
         <activity
@@ -113,7 +114,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.example.successsynergyapp.com.squareup.picasso"
+            android:authorities="com.successsynergy.mylawyerapp.com.squareup.picasso"
             android:exported="false" />
         <!--
              FirebaseMessagingService performs security checks at runtime,
@@ -144,7 +145,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.successsynergyapp.firebaseinitprovider"
+            android:authorities="com.successsynergy.mylawyerapp.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />

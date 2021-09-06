@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "com.example.successsynergyapp",
+  "applicationId": "com.successsynergy.mylawyerapp",
   "variantType": "BASE_APK",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "com.example.successsynergyapp",
+        "packageId": "com.successsynergy.mylawyerapp",
         "split": "",
         "minSdkVersion": "21"
       }

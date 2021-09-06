@@ -104,6 +104,7 @@ class AccountDetails3Fragment : Fragment() {
 
                         val imageURL = Uri.toString()
                         serviceProvider.cor_profile = imageURL
+                        serviceProvider.approved = false
                         firebaseDatabase.reference.child("ServiceProvider").child(category).child(uid).setValue(serviceProvider)
                                 .addOnSuccessListener {
                                     pd.dismiss()

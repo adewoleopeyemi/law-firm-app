@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">423863668147-mhsd50omdstvmti5noi1gefn812qaq8j.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://sucessapp-dd1ed-default-rtdb.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">423863668147</string>
-    <string name="google_api_key" translatable="false">AIzaSyDw-YYpHdOTrv607dvdtqNgzGIINadh-Is</string>
-    <string name="google_app_id" translatable="false">1:423863668147:android:f5b15914e6b69132394fc6</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDw-YYpHdOTrv607dvdtqNgzGIINadh-Is</string>
-    <string name="google_storage_bucket" translatable="false">sucessapp-dd1ed.appspot.com</string>
-    <string name="project_id" translatable="false">sucessapp-dd1ed</string>
+    <string name="default_web_client_id" translatable="false">298034549602-lapuiimmikg3clviat61uu2bj1ckc44g.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mylawyerapp-8fe7a-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">298034549602</string>
+    <string name="google_api_key" translatable="false">AIzaSyChJ2rW5O6Wxg7Yi3kO9FgFA_8Kuw-aXZ4</string>
+    <string name="google_app_id" translatable="false">1:298034549602:android:d693fcc60105e305d3123b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyChJ2rW5O6Wxg7Yi3kO9FgFA_8Kuw-aXZ4</string>
+    <string name="google_storage_bucket" translatable="false">mylawyerapp-8fe7a.appspot.com</string>
+    <string name="project_id" translatable="false">mylawyerapp-8fe7a</string>
 </resources>
