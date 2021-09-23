@@ -32,6 +32,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.SuccessSynergyApp" >
+        <activity android:name="com.example.successsynergyapp.dashboard.form.ViewFormActivity" />
         <activity android:name="com.example.successsynergyapp.dashboard.form.UserFormActivity" />
         <activity
             android:name="com.example.successsynergyapp.auth.EditProfileActivity"
@@ -66,6 +67,23 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name="com.example.successsynergyapp.notification.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.example.successsynergyapp.notification.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
 
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

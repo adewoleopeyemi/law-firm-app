@@ -83,6 +83,12 @@ class ProfileFragment : Fragment() {
                         binding.tvEmail.text = user!!.email.toString()
                         binding.casesHandled.text = user!!.num_cases_solved.toString()
                         binding.tvRating.text = user!!.rating.toString()
+                        if (user!!.approved){
+                            binding.ivVerified.setImageDrawable(context!!.resources.getDrawable(R.drawable.ic_baseline_done_outline_24))
+                        }
+                        else{
+                            binding.ivVerified.setImageDrawable(context!!.resources.getDrawable(R.drawable.ic_baseline_clear_24))
+                        }
                         Glide.with(context!!).load(user!!.cor_profile).placeholder(resources.getDrawable(R.drawable.ic_outline_person_outline)).into(binding.ivProfile)
                     }
                 }

@@ -1,25 +1,24 @@
 package com.example.successsynergyapp
 
-import android.content.DialogInterface
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
 import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.DataBindingUtil.setContentView
-import com.example.successsynergyapp.R
-import com.example.successsynergyapp.extensions.addFragment
 import com.example.successsynergyapp.auth.Theme6BaseActivity
 import com.example.successsynergyapp.dashboard.form.FormFragment
-
 import com.example.successsynergyapp.dashboard.home.HomeFragment
 import com.example.successsynergyapp.dashboard.profile.ProfileFragment
 import com.example.successsynergyapp.databinding.ActivityMainBinding
-import com.example.successsynergyapp.extensions.removeFragment
+import com.example.successsynergyapp.extensions.addFragment
 import com.example.successsynergyapp.extensions.replaceFragment
+import com.example.successsynergyapp.notification.Token
 import com.example.successsynergyapp.utils.theme3bottomnavigation.BottomNavigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.theme3_toolbar.*
+
 
 class MainActivity : Theme6BaseActivity() {
     lateinit var binding: ActivityMainBinding
@@ -57,9 +56,11 @@ class MainActivity : Theme6BaseActivity() {
         binding.bottomNavigation.add(BottomNavigation.Model(ID_HOME, R.drawable.theme3_ic_home))
         binding.bottomNavigation.add(BottomNavigation.Model(ID_ACCOUNT, R.drawable.theme3_ic_account))
         if (forWhat.equals("ServiceProvider")){
+            UpdateToken(true)
             binding.bottomNavigation.add(BottomNavigation.Model(ID_MESSAGE, R.drawable.theme3_ic_notification))
         }
         else{
+            UpdateToken(false)
             binding.bottomNavigation.add(BottomNavigation.Model(ID_MESSAGE, R.drawable.theme3_ic_message))
         }
 
@@ -118,5 +119,25 @@ class MainActivity : Theme6BaseActivity() {
 
         val alert = dialogBuilder.create()
         alert.show()
+    }
+
+    private fun UpdateToken(forServiceProvider: Boolean) {
+        val firebaseUser = FirebaseAuth.getInstance().currentUser
+        val refreshToken = FirebaseInstanceId.getInstance().token
+        val token = Token(refreshToken)
+        if (forServiceProvider){
+            FirebaseDatabase.getInstance().getReference("Tokens")
+                .child("ServiceProvider")
+                .child(
+                FirebaseAuth.getInstance().currentUser!!.uid
+            ).setValue(token)
+        }
+        else{
+            FirebaseDatabase.getInstance().getReference("Tokens")
+                .child("Users")
+                .child(
+                    FirebaseAuth.getInstance().currentUser!!.uid
+                ).setValue(token)
+        }
     }
 }

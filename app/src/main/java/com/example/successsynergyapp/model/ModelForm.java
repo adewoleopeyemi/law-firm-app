@@ -4,7 +4,15 @@ import java.io.Serializable;
 
 public class ModelForm implements Serializable {
     String first_name, surname, Location, State, email_address, phone_number;
-    String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed, status;
+    String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed, status, uid;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
 
     public String getAgreed() {
         return agreed;

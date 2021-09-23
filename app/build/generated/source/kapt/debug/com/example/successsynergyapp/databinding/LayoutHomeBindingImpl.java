@@ -18,22 +18,25 @@ public class LayoutHomeBindingImpl extends LayoutHomeBinding  {
         sViewsWithIds.put(R.id.loading_anim, 2);
         sViewsWithIds.put(R.id.app_bar, 3);
         sViewsWithIds.put(R.id.toolbar_layout, 4);
-        sViewsWithIds.put(R.id.ivBg, 5);
-        sViewsWithIds.put(R.id.user_selection, 6);
-        sViewsWithIds.put(R.id.selected_category, 7);
-        sViewsWithIds.put(R.id.tv_all_users, 8);
-        sViewsWithIds.put(R.id.tv_top_rated_users, 9);
-        sViewsWithIds.put(R.id.et_search, 10);
-        sViewsWithIds.put(R.id.toolbar, 11);
-        sViewsWithIds.put(R.id.ivBack, 12);
-        sViewsWithIds.put(R.id.tv_search_results, 13);
-        sViewsWithIds.put(R.id.llMain, 14);
-        sViewsWithIds.put(R.id.tv_popular, 15);
-        sViewsWithIds.put(R.id.rv_popular, 16);
-        sViewsWithIds.put(R.id.tv_general, 17);
-        sViewsWithIds.put(R.id.all_rl, 18);
-        sViewsWithIds.put(R.id.rv_all, 19);
-        sViewsWithIds.put(R.id.rv_top_rated, 20);
+        sViewsWithIds.put(R.id.adsViewPager, 5);
+        sViewsWithIds.put(R.id.indicator, 6);
+        sViewsWithIds.put(R.id.user_selection, 7);
+        sViewsWithIds.put(R.id.selected_category, 8);
+        sViewsWithIds.put(R.id.tv_all_users, 9);
+        sViewsWithIds.put(R.id.tv_top_rated_users, 10);
+        sViewsWithIds.put(R.id.et_search, 11);
+        sViewsWithIds.put(R.id.toolbar, 12);
+        sViewsWithIds.put(R.id.ivBack, 13);
+        sViewsWithIds.put(R.id.tv_search_results, 14);
+        sViewsWithIds.put(R.id.llMain, 15);
+        sViewsWithIds.put(R.id.tv_popular, 16);
+        sViewsWithIds.put(R.id.no_popular_users_anim, 17);
+        sViewsWithIds.put(R.id.rv_popular, 18);
+        sViewsWithIds.put(R.id.tv_general, 19);
+        sViewsWithIds.put(R.id.all_rl, 20);
+        sViewsWithIds.put(R.id.no_general_users, 21);
+        sViewsWithIds.put(R.id.rv_all, 22);
+        sViewsWithIds.put(R.id.rv_top_rated, 23);
     }
     // views
     @NonNull
@@ -44,30 +47,33 @@ public class LayoutHomeBindingImpl extends LayoutHomeBinding  {
     // Inverse Binding Event Handlers
 
     public LayoutHomeBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 21, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 24, sIncludes, sViewsWithIds));
     }
     private LayoutHomeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.RelativeLayout) bindings[18]
+            , (androidx.viewpager.widget.ViewPager) bindings[5]
+            , (android.widget.RelativeLayout) bindings[20]
             , (com.google.android.material.appbar.AppBarLayout) bindings[3]
-            , (android.widget.EditText) bindings[10]
-            , (android.widget.ImageView) bindings[12]
-            , (android.widget.ImageView) bindings[5]
-            , (android.widget.LinearLayout) bindings[14]
+            , (android.widget.EditText) bindings[11]
+            , (me.relex.circleindicator.CircleIndicator) bindings[6]
+            , (android.widget.ImageView) bindings[13]
+            , (android.widget.LinearLayout) bindings[15]
             , (com.airbnb.lottie.LottieAnimationView) bindings[2]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[21]
+            , (com.airbnb.lottie.LottieAnimationView) bindings[17]
             , (android.widget.RelativeLayout) bindings[1]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[19]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[16]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[20]
-            , (android.view.View) bindings[7]
-            , (androidx.appcompat.widget.Toolbar) bindings[11]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[22]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[18]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[23]
+            , (android.view.View) bindings[8]
+            , (androidx.appcompat.widget.Toolbar) bindings[12]
             , (com.google.android.material.appbar.CollapsingToolbarLayout) bindings[4]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.TextView) bindings[17]
-            , (android.widget.TextView) bindings[15]
-            , (android.widget.TextView) bindings[13]
             , (android.widget.TextView) bindings[9]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[6]
+            , (android.widget.TextView) bindings[19]
+            , (android.widget.TextView) bindings[16]
+            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[10]
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[7]
             );
         this.mboundView0 = (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);

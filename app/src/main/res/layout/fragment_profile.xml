@@ -24,6 +24,15 @@
                 android:textAppearance="@style/T12FontBold"
                 android:textColor="@color/t12_textColorPrimary"
                 android:textSize="@dimen/t12_font_size_medium" />
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                />
         </RelativeLayout>
 
         <androidx.core.widget.NestedScrollView
@@ -84,13 +93,13 @@
                             android:textColor="@color/t12_textColorSecondary"
                             android:textSize="@dimen/t12_font_size_small" />
                         <ImageView
-                            android:id="@+id/ivFaceBook"
+                            android:id="@+id/iv_Verified"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
                             android:layout_alignParentEnd="true"
                             android:background="@drawable/t12_bg_circle_stroke"
                             android:padding="@dimen/t12_spacing_standard"
-                            android:src="@drawable/t12_ic_pencil"/>
+                            android:src="@drawable/ic_baseline_clear_24"/>
                         <RelativeLayout
                             android:layout_below="@id/tv_email"
                             android:layout_width="match_parent"

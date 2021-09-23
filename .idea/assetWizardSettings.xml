@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../adewole%20opeyemi/AppData/Local/Android/Sdk/icons/material/materialicons/add/baseline_add_24.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material/icons/materialicons/more_vert/baseline_more_vert_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_baseline_add_24" />
-                            <entry key="sourceFile" value="C:\Users\adewole opeyemi\AndroidStudioProjects\SuccessSynergyApp" />
+                            <entry key="opacityPercent" value="51" />
+                            <entry key="outputName" value="ic_baseline_more_vert_24" />
+                            <entry key="sourceFile" value="/C:\Users\adewole opeyemi\AndroidStudioProjects\SuccessSynergyApp" />
                           </map>
                         </option>
                       </PersistentState>

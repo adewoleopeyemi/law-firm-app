@@ -87,7 +87,8 @@ class UserFormActivity : Theme6BaseActivity() {
     }
 
     private fun uploadForm() {
-        firebaseDatabase.reference.child("Forms").child(FirebaseAuth.getInstance().currentUser!!.uid)
+        form.uid  = FirebaseAuth.getInstance().currentUser!!.uid
+        firebaseDatabase.reference.child("Forms")
             .child(""+SystemClock.currentThreadTimeMillis())
             .setValue(form).addOnSuccessListener {
                 pd.dismiss()

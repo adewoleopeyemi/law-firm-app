@@ -58,8 +58,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <ImageView
-                            android:id="@+id/ivBg"
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/adsViewPager"
                             android:layout_width="0dp"
                             android:layout_height="0dp"
                             android:scaleType="centerCrop"
@@ -69,6 +69,16 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintVertical_bias="0.7"/>
+
                         <FrameLayout
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
@@ -76,7 +86,7 @@
                             android:layout_marginEnd="@dimen/_50sdp"
                             android:layout_marginBottom="@dimen/_12sdp"
                             android:background="@drawable/t12_bg_rounded_stroke"
-                            app:layout_constraintBottom_toBottomOf="@id/ivBg">
+                            app:layout_constraintBottom_toBottomOf="@id/adsViewPager">
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:id="@+id/user_selection"
@@ -204,10 +214,24 @@
                             android:textAllCaps="true"
                             android:fontFamily="@font/basic"/>
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rv_popular"
-                            style="@style/T12RecycleView"
-                            android:layout_marginTop="@dimen/t12_spacing_standard" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                app:lottie_rawRes="@raw/real_no_users"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                android:id="@+id/no_popular_users_anim"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"/>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_popular"
+                                style="@style/T12RecycleView"
+                                android:layout_marginTop="@dimen/t12_spacing_standard" />
+                        </LinearLayout>
 
                         <TextView
                             style="@style/T12Heading"
@@ -224,12 +248,28 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="12dp"
                             android:layout_marginBottom="@dimen/_90sdp" >
-                            <androidx.recyclerview.widget.RecyclerView
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:id="@+id/rv_all"/>
+                                android:orientation="horizontal">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:id="@+id/no_general_users"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_gravity="center_horizontal"
+                                    app:lottie_rawRes="@raw/real_no_users"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_loop="true"
+                                    android:visibility="gone"/>
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/rv_all"/>
+                            </LinearLayout>
                         </RelativeLayout>
                     </LinearLayout>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

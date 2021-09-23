@@ -15,20 +15,21 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.tvToolBarTitle, 1);
-        sViewsWithIds.put(R.id.rlTop, 2);
-        sViewsWithIds.put(R.id.cvImg, 3);
-        sViewsWithIds.put(R.id.iv_profile, 4);
-        sViewsWithIds.put(R.id.tv_name, 5);
-        sViewsWithIds.put(R.id.tv_email, 6);
-        sViewsWithIds.put(R.id.ivFaceBook, 7);
-        sViewsWithIds.put(R.id.tv_edit_profile, 8);
-        sViewsWithIds.put(R.id.view1, 9);
-        sViewsWithIds.put(R.id.llInfo, 10);
-        sViewsWithIds.put(R.id.cases_handled, 11);
-        sViewsWithIds.put(R.id.tv_rating, 12);
-        sViewsWithIds.put(R.id.view2, 13);
-        sViewsWithIds.put(R.id.tvHeading, 14);
-        sViewsWithIds.put(R.id.rvPopular, 15);
+        sViewsWithIds.put(R.id.iv_logout, 2);
+        sViewsWithIds.put(R.id.rlTop, 3);
+        sViewsWithIds.put(R.id.cvImg, 4);
+        sViewsWithIds.put(R.id.iv_profile, 5);
+        sViewsWithIds.put(R.id.tv_name, 6);
+        sViewsWithIds.put(R.id.tv_email, 7);
+        sViewsWithIds.put(R.id.iv_Verified, 8);
+        sViewsWithIds.put(R.id.tv_edit_profile, 9);
+        sViewsWithIds.put(R.id.view1, 10);
+        sViewsWithIds.put(R.id.llInfo, 11);
+        sViewsWithIds.put(R.id.cases_handled, 12);
+        sViewsWithIds.put(R.id.tv_rating, 13);
+        sViewsWithIds.put(R.id.view2, 14);
+        sViewsWithIds.put(R.id.tvHeading, 15);
+        sViewsWithIds.put(R.id.rvPopular, 16);
     }
     // views
     @NonNull
@@ -39,25 +40,26 @@ public class FragmentProfileBindingImpl extends FragmentProfileBinding  {
     // Inverse Binding Event Handlers
 
     public FragmentProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 17, sIncludes, sViewsWithIds));
     }
     private FragmentProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.TextView) bindings[11]
-            , (androidx.cardview.widget.CardView) bindings[3]
-            , (android.widget.ImageView) bindings[7]
-            , (android.widget.ImageView) bindings[4]
-            , (android.widget.LinearLayout) bindings[10]
-            , (android.widget.RelativeLayout) bindings[2]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[15]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.TextView) bindings[6]
-            , (android.widget.TextView) bindings[14]
-            , (android.widget.TextView) bindings[5]
             , (android.widget.TextView) bindings[12]
+            , (androidx.cardview.widget.CardView) bindings[4]
+            , (android.widget.ImageView) bindings[2]
+            , (android.widget.ImageView) bindings[5]
+            , (android.widget.ImageView) bindings[8]
+            , (android.widget.LinearLayout) bindings[11]
+            , (android.widget.RelativeLayout) bindings[3]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[16]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[7]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[13]
             , (android.widget.TextView) bindings[1]
-            , (android.view.View) bindings[9]
-            , (android.view.View) bindings[13]
+            , (android.view.View) bindings[10]
+            , (android.view.View) bindings[14]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

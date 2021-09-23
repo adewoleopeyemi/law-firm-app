@@ -42,7 +42,7 @@
 22-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:26:22-107
 23
 24    <application
-24-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:11:5-53:19
+24-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:11:5-71:19
 25        android:allowBackup="true"
 25-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:12:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -61,291 +61,324 @@
 33        android:testOnly="true"
 34        android:theme="@style/Theme.SuccessSynergyApp" >
 34-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:18:9-55
-35        <activity android:name="com.example.successsynergyapp.dashboard.form.UserFormActivity" />
+35        <activity android:name="com.example.successsynergyapp.dashboard.form.ViewFormActivity" />
 35-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:19:9-78
 35-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:19:19-66
-36        <activity
-36-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:20:9-22:52
-37            android:name="com.example.successsynergyapp.auth.EditProfileActivity"
-37-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:21:13-53
-38            android:screenOrientation="portrait" />
-38-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:22:13-49
-39        <activity
-39-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:23:9-25:52
-40            android:name="com.example.successsynergyapp.dashboard.home.search.SearchActivity"
-40-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:24:13-65
-41            android:screenOrientation="portrait" />
-41-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:25:13-49
-42        <activity
-42-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:26:9-28:52
-43            android:name="com.example.successsynergyapp.auth.UserTypeActivity"
-43-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:27:13-50
-44            android:screenOrientation="portrait" />
-44-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:28:13-49
-45        <activity
-45-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:29:9-31:52
-46            android:name="com.example.successsynergyapp.auth.LoginActivity"
-46-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:30:13-47
-47            android:screenOrientation="portrait" />
-47-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:31:13-49
-48        <activity
-48-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:32:9-34:52
-49            android:name="com.example.successsynergyapp.auth.AuthActivity"
-49-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:33:13-46
-50            android:screenOrientation="portrait" />
-50-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:34:13-49
-51        <activity
-51-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:35:9-44:20
-52            android:name="com.example.successsynergyapp.auth.WalkThroughActivity"
-52-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:36:13-53
-53            android:exported="true"
-53-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:37:13-36
-54            android:screenOrientation="portrait" >
-54-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:38:13-49
-55            <intent-filter>
-55-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:39:13-43:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:40:17-69
-56-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:40:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:42:17-77
-58-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:42:27-74
-59            </intent-filter>
-60        </activity>
-61        <activity
-61-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:45:9-48:53
-62            android:name="com.example.successsynergyapp.MainActivity"
-62-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:46:13-41
-63            android:screenOrientation="portrait"
-63-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:47:13-49
-64            android:theme="@style/Theme6AppTheme" />
-64-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:48:13-50
-65
-66        <meta-data
-66-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:50:9-52:57
-67            android:name="preloaded_fonts"
-67-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:51:13-43
-68            android:resource="@array/preloaded_fonts" />
-68-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:52:13-54
-69
-70        <activity
-70-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
-71            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-71-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
-72            android:excludeFromRecents="true"
-72-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
-73            android:exported="true"
-73-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
-74            android:launchMode="singleTask"
-74-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
-75            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-75-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
-76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-76-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
-77
-78        <service
-78-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
-79            android:name="com.google.firebase.components.ComponentDiscoveryService"
-79-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
-80            android:directBootAware="true"
-80-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
-81            android:exported="false" >
-81-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
-82            <meta-data
-82-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
-83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-83-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
-86                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-86-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:16:17-124
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:17:17-82
-88            <meta-data
-88-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:32:13-34:85
-89                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-89-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:33:17-109
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:34:17-82
-91            <meta-data
-91-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
-92                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-92-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
-93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
-94            <meta-data
-94-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:39:13-41:85
-95                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-95-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:40:17-119
-96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:41:17-82
-97            <meta-data
-97-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
-98                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-98-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
-99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+36        <activity android:name="com.example.successsynergyapp.dashboard.form.UserFormActivity" />
+36-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:20:9-69
+36-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:20:19-66
+37        <activity
+37-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:21:9-23:52
+38            android:name="com.example.successsynergyapp.auth.EditProfileActivity"
+38-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:22:13-53
+39            android:screenOrientation="portrait" />
+39-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:23:13-49
+40        <activity
+40-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:24:9-26:52
+41            android:name="com.example.successsynergyapp.dashboard.home.search.SearchActivity"
+41-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:25:13-65
+42            android:screenOrientation="portrait" />
+42-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:26:13-49
+43        <activity
+43-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:27:9-29:52
+44            android:name="com.example.successsynergyapp.auth.UserTypeActivity"
+44-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:28:13-50
+45            android:screenOrientation="portrait" />
+45-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:29:13-49
+46        <activity
+46-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:30:9-32:52
+47            android:name="com.example.successsynergyapp.auth.LoginActivity"
+47-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:31:13-47
+48            android:screenOrientation="portrait" />
+48-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:32:13-49
+49        <activity
+49-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:33:9-35:52
+50            android:name="com.example.successsynergyapp.auth.AuthActivity"
+50-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:34:13-46
+51            android:screenOrientation="portrait" />
+51-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:35:13-49
+52        <activity
+52-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:36:9-45:20
+53            android:name="com.example.successsynergyapp.auth.WalkThroughActivity"
+53-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:37:13-53
+54            android:exported="true"
+54-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:38:13-36
+55            android:screenOrientation="portrait" >
+55-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:39:13-49
+56            <intent-filter>
+56-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:40:13-44:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:41:17-69
+57-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:41:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:43:17-77
+59-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:43:27-74
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:46:9-49:53
+63            android:name="com.example.successsynergyapp.MainActivity"
+63-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:47:13-41
+64            android:screenOrientation="portrait"
+64-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:48:13-49
+65            android:theme="@style/Theme6AppTheme" />
+65-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:49:13-50
+66
+67        <meta-data
+67-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:51:9-53:57
+68            android:name="preloaded_fonts"
+68-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:52:13-43
+69            android:resource="@array/preloaded_fonts" />
+69-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:53:13-54
+70
+71        <service
+71-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:55:9-62:19
+72            android:name="com.example.successsynergyapp.notification.MyFireBaseMessagingService"
+72-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:56:13-68
+73            android:enabled="true"
+73-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:57:13-35
+74            android:exported="true" >
+74-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:58:13-36
+75            <intent-filter>
+75-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:59:13-61:29
+76                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+76-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:60:17-78
+76-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:60:25-75
+77            </intent-filter>
+78        </service>
+79        <service
+79-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:63:9-70:19
+80            android:name="com.example.successsynergyapp.notification.MyFirebaseIdService"
+80-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:64:13-61
+81            android:enabled="true"
+81-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:65:13-35
+82            android:exported="true" >
+82-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:66:13-36
+83            <intent-filter>
+83-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:67:13-69:29
+84                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+84-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:68:17-80
+84-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:68:25-77
+85            </intent-filter>
+86        </service>
+87
+88        <activity
+88-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+89            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+89-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+90            android:excludeFromRecents="true"
+90-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+91            android:exported="true"
+91-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+92            android:launchMode="singleTask"
+92-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+93            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+93-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+95
+96        <service
+96-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:34:13-84
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
 100            <meta-data
-100-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:32:13-34:85
-101                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-101-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:33:17-96
+100-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+101-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
 102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:34:17-82
+102-->[com.google.firebase:firebase-auth:19.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/639abee7888568e8e29533f6c48274dc/jetified-firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
 103            <meta-data
-103-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
-104                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-104-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
+103-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+104                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+104-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:16:17-124
 105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
+105-->[com.google.firebase:firebase-database-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/99d76f18b243f0fbcf60359b19107f17/jetified-firebase-database-ktx-20.0.0/AndroidManifest.xml:17:17-82
 106            <meta-data
-106-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
-107                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-107-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+106-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:32:13-34:85
+107                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+107-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:33:17-109
 108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+108-->[com.google.firebase:firebase-database:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/2515074649596bf359b02cebbe3f2176/jetified-firebase-database-20.0.0/AndroidManifest.xml:34:17-82
 109            <meta-data
-109-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
-110                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-110-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+109-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:33:13-35:85
+110                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+110-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:34:17-107
 111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
-112        </service>
-113
-114        <provider
-114-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/7a39704f4a57511b15ee7c3755660240/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-115            android:name="com.squareup.picasso.PicassoProvider"
-115-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/7a39704f4a57511b15ee7c3755660240/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-116            android:authorities="com.successsynergy.mylawyerapp.com.squareup.picasso"
-116-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/7a39704f4a57511b15ee7c3755660240/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-117            android:exported="false" />
-117-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/7a39704f4a57511b15ee7c3755660240/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-118        <!--
-119             FirebaseMessagingService performs security checks at runtime,
-120             but set to not exported to explicitly avoid allowing another app to call it.
-121        -->
-122        <service
-122-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:28:9-35:19
-123            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-123-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:29:13-82
-124            android:directBootAware="true"
-124-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:30:13-43
-125            android:exported="false" >
-125-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:31:13-37
-126            <intent-filter android:priority="-500" >
-126-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:32:13-34:29
-126-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:32:28-51
-127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-127-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:33:17-78
-127-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:33:25-75
-128            </intent-filter>
-129        </service>
-130
-131        <receiver
-131-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:37:9-44:20
-132            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-132-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:38:13-78
-133            android:exported="true"
-133-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:39:13-36
-134            android:permission="com.google.android.c2dm.permission.SEND" >
-134-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:40:13-73
-135            <intent-filter>
-135-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:41:13-43:29
-136                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-136-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:17-81
-136-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:25-78
-137            </intent-filter>
-138        </receiver>
-139
-140        <activity
-140-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-141-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
-142            android:exported="false"
-142-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-143-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-144
-145        <provider
-145-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
-146            android:name="com.google.firebase.provider.FirebaseInitProvider"
-146-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-147            android:authorities="com.successsynergy.mylawyerapp.firebaseinitprovider"
-147-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
-148            android:directBootAware="true"
-148-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
-149            android:exported="false"
-149-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
-150            android:initOrder="100" />
-150-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
-151
-152        <receiver
-152-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
-153            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-153-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
-154            android:enabled="true"
-154-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
-155            android:exported="false" >
-155-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
+111-->[com.google.firebase:firebase-storage:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/726d6c80a8d918e8f60f648656abcb8f/jetified-firebase-storage-20.0.0/AndroidManifest.xml:35:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:39:13-41:85
+113                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+113-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:40:17-119
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:41:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+116                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+116-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/626ad3f1d142a6d31535a11ebcf84a8b/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:30:13-32:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:31:17-139
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-measurement-api:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/dcc655589072bf767329504bd066371e/jetified-play-services-measurement-api-18.0.0/AndroidManifest.xml:32:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+125                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+125-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3cc0be7d05b3e29d67e77b181800b904/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:17:13-19:85
+128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+128-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:18:17-127
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-installations:16.3.3] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/772bfd1a28e7b75da2a85c45d6af3e93/jetified-firebase-installations-16.3.3/AndroidManifest.xml:19:17-82
+130        </service>
+131
+132        <provider
+132-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/6a8671b9e792c65a2b92f8c74c17649c/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+133            android:name="com.squareup.picasso.PicassoProvider"
+133-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/6a8671b9e792c65a2b92f8c74c17649c/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+134            android:authorities="com.successsynergy.mylawyerapp.com.squareup.picasso"
+134-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/6a8671b9e792c65a2b92f8c74c17649c/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+135            android:exported="false" />
+135-->[com.squareup.picasso:picasso:2.71828] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/6a8671b9e792c65a2b92f8c74c17649c/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+136        <!--
+137             FirebaseMessagingService performs security checks at runtime,
+138             but set to not exported to explicitly avoid allowing another app to call it.
+139        -->
+140        <service
+140-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:28:9-35:19
+141            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+141-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:29:13-82
+142            android:directBootAware="true"
+142-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:30:13-43
+143            android:exported="false" >
+143-->[com.google.firebase:firebase-messaging:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/43ae2bf528fff160c8ffd1298b7ed52d/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:31:13-37
+144            <intent-filter android:priority="-500" >
+144-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:59:13-61:29
+145                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+145-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:60:17-78
+145-->/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/AndroidManifest.xml:60:25-75
+146            </intent-filter>
+147        </service>
+148
+149        <receiver
+149-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:37:9-44:20
+150            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+150-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:38:13-78
+151            android:exported="true"
+151-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:39:13-36
+152            android:permission="com.google.android.c2dm.permission.SEND" >
+152-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:40:13-73
+153            <intent-filter>
+153-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:41:13-43:29
+154                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+154-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:17-81
+154-->[com.google.firebase:firebase-iid:21.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/3aeffc9750d586a61d0497b6e01b2c47/jetified-firebase-iid-21.0.0/AndroidManifest.xml:42:25-78
+155            </intent-filter>
 156        </receiver>
 157
-158        <service
-158-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
-159            android:name="com.google.android.gms.measurement.AppMeasurementService"
-159-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
-160            android:enabled="true"
-160-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
-161            android:exported="false" />
-161-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
-162        <service
-162-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
-163            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-163-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
-164            android:enabled="true"
-164-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
-165            android:exported="false"
-165-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
-166            android:permission="android.permission.BIND_JOB_SERVICE" />
-166-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
-167
-168        <meta-data
-168-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-169            android:name="com.google.android.gms.version"
-169-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-170            android:value="@integer/google_play_services_version" />
-170-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-171
-172        <service
-172-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
-173            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-173-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
-174            android:exported="false" >
-174-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
-175            <meta-data
-175-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
-176                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-176-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
-177                android:value="cct" />
-177-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
-178        </service>
-179        <service
-179-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
-180            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-180-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
-181            android:exported="false"
-181-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
-182            android:permission="android.permission.BIND_JOB_SERVICE" >
-182-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
-183        </service>
-184
-185        <receiver
-185-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
-186            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-186-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
-187            android:exported="false" />
-187-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
-188    </application>
+158        <activity
+158-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+159            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+159-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+160            android:exported="false"
+160-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+161-->[com.google.android.gms:play-services-base:17.1.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/5a561977c897f081edde0e2ae66503df/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+162
+163        <provider
+163-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+164            android:name="com.google.firebase.provider.FirebaseInitProvider"
+164-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+165            android:authorities="com.successsynergy.mylawyerapp.firebaseinitprovider"
+165-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+166            android:directBootAware="true"
+166-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+167            android:exported="false"
+167-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+168            android:initOrder="100" />
+168-->[com.google.firebase:firebase-common:20.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/d5a0fff4e0bcf97507470213c737e20e/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+169
+170        <receiver
+170-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:29:9-33:20
+171            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+171-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:30:13-85
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:31:13-35
+173            android:exported="false" >
+173-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:32:13-37
+174        </receiver>
+175
+176        <service
+176-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:35:9-38:40
+177            android:name="com.google.android.gms.measurement.AppMeasurementService"
+177-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:36:13-84
+178            android:enabled="true"
+178-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:37:13-35
+179            android:exported="false" />
+179-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:38:13-37
+180        <service
+180-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:39:9-43:72
+181            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+181-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:40:13-87
+182            android:enabled="true"
+182-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:41:13-35
+183            android:exported="false"
+183-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:42:13-37
+184            android:permission="android.permission.BIND_JOB_SERVICE" />
+184-->[com.google.android.gms:play-services-measurement:18.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/428c8c89d612f86f730b70579077f856/jetified-play-services-measurement-18.0.0/AndroidManifest.xml:43:13-69
+185
+186        <meta-data
+186-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+187            android:name="com.google.android.gms.version"
+187-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+188            android:value="@integer/google_play_services_version" />
+188-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/f1a7f2e8ca3a94d827107a8e04b8a5e8/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 189
-190</manifest>
+190        <service
+190-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+191            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+191-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+192            android:exported="false" >
+192-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+193            <meta-data
+193-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+194                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+194-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+195                android:value="cct" />
+195-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/4ee99540ab1c368424926f9b301b8e61/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+196        </service>
+197        <service
+197-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+198            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+198-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+199            android:exported="false"
+199-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+200            android:permission="android.permission.BIND_JOB_SERVICE" >
+200-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+201        </service>
+202
+203        <receiver
+203-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+204            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+204-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+205            android:exported="false" />
+205-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/dareoni/.gradle/caches/transforms-2/files-2.1/c555b03dbfdc0151d66fb3fa88d173de/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+206    </application>
+207
+208</manifest>

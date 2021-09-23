@@ -26,10 +26,13 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final CardView cvImg;
 
   @NonNull
-  public final ImageView ivFaceBook;
+  public final ImageView ivLogout;
 
   @NonNull
   public final ImageView ivProfile;
+
+  @NonNull
+  public final ImageView ivVerified;
 
   @NonNull
   public final LinearLayout llInfo;
@@ -65,15 +68,16 @@ public abstract class FragmentProfileBinding extends ViewDataBinding {
   public final View view2;
 
   protected FragmentProfileBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView casesHandled, CardView cvImg, ImageView ivFaceBook, ImageView ivProfile,
-      LinearLayout llInfo, RelativeLayout rlTop, RecyclerView rvPopular, TextView tvEditProfile,
-      TextView tvEmail, TextView tvHeading, TextView tvName, TextView tvRating,
-      TextView tvToolBarTitle, View view1, View view2) {
+      TextView casesHandled, CardView cvImg, ImageView ivLogout, ImageView ivProfile,
+      ImageView ivVerified, LinearLayout llInfo, RelativeLayout rlTop, RecyclerView rvPopular,
+      TextView tvEditProfile, TextView tvEmail, TextView tvHeading, TextView tvName,
+      TextView tvRating, TextView tvToolBarTitle, View view1, View view2) {
     super(_bindingComponent, _root, _localFieldCount);
     this.casesHandled = casesHandled;
     this.cvImg = cvImg;
-    this.ivFaceBook = ivFaceBook;
+    this.ivLogout = ivLogout;
     this.ivProfile = ivProfile;
+    this.ivVerified = ivVerified;
     this.llInfo = llInfo;
     this.rlTop = rlTop;
     this.rvPopular = rvPopular;

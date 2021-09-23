@@ -16,14 +16,19 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.successsynergyapp.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import java.lang.Deprecated;
 import java.lang.Object;
+import me.relex.circleindicator.CircleIndicator;
 
 public abstract class LayoutHomeBinding extends ViewDataBinding {
+  @NonNull
+  public final ViewPager adsViewPager;
+
   @NonNull
   public final RelativeLayout allRl;
 
@@ -34,16 +39,22 @@ public abstract class LayoutHomeBinding extends ViewDataBinding {
   public final EditText etSearch;
 
   @NonNull
-  public final ImageView ivBack;
+  public final CircleIndicator indicator;
 
   @NonNull
-  public final ImageView ivBg;
+  public final ImageView ivBack;
 
   @NonNull
   public final LinearLayout llMain;
 
   @NonNull
   public final LottieAnimationView loadingAnim;
+
+  @NonNull
+  public final LottieAnimationView noGeneralUsers;
+
+  @NonNull
+  public final LottieAnimationView noPopularUsersAnim;
 
   @NonNull
   public final RelativeLayout rlLoading;
@@ -85,20 +96,25 @@ public abstract class LayoutHomeBinding extends ViewDataBinding {
   public final ConstraintLayout userSelection;
 
   protected LayoutHomeBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RelativeLayout allRl, AppBarLayout appBar, EditText etSearch, ImageView ivBack,
-      ImageView ivBg, LinearLayout llMain, LottieAnimationView loadingAnim,
-      RelativeLayout rlLoading, RecyclerView rvAll, RecyclerView rvPopular, RecyclerView rvTopRated,
-      View selectedCategory, Toolbar toolbar, CollapsingToolbarLayout toolbarLayout,
-      TextView tvAllUsers, TextView tvGeneral, TextView tvPopular, TextView tvSearchResults,
-      TextView tvTopRatedUsers, ConstraintLayout userSelection) {
+      ViewPager adsViewPager, RelativeLayout allRl, AppBarLayout appBar, EditText etSearch,
+      CircleIndicator indicator, ImageView ivBack, LinearLayout llMain,
+      LottieAnimationView loadingAnim, LottieAnimationView noGeneralUsers,
+      LottieAnimationView noPopularUsersAnim, RelativeLayout rlLoading, RecyclerView rvAll,
+      RecyclerView rvPopular, RecyclerView rvTopRated, View selectedCategory, Toolbar toolbar,
+      CollapsingToolbarLayout toolbarLayout, TextView tvAllUsers, TextView tvGeneral,
+      TextView tvPopular, TextView tvSearchResults, TextView tvTopRatedUsers,
+      ConstraintLayout userSelection) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.adsViewPager = adsViewPager;
     this.allRl = allRl;
     this.appBar = appBar;
     this.etSearch = etSearch;
+    this.indicator = indicator;
     this.ivBack = ivBack;
-    this.ivBg = ivBg;
     this.llMain = llMain;
     this.loadingAnim = loadingAnim;
+    this.noGeneralUsers = noGeneralUsers;
+    this.noPopularUsersAnim = noPopularUsersAnim;
     this.rlLoading = rlLoading;
     this.rvAll = rvAll;
     this.rvPopular = rvPopular;

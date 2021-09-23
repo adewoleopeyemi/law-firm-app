@@ -20,6 +20,7 @@ import com.example.successsynergyapp.databinding.FragmentIndividualAllBindingImp
 import com.example.successsynergyapp.databinding.FragmentLoginBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentProfileBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentSignUpBindingImpl;
+import com.example.successsynergyapp.databinding.FragmentSingleAdBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentWalkThroughBindingImpl;
 import com.example.successsynergyapp.databinding.LayoutFormDetailBindingImpl;
 import com.example.successsynergyapp.databinding.LayoutHomeBindingImpl;
@@ -68,25 +69,27 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTSIGNUP = 14;
 
-  private static final int LAYOUT_FRAGMENTWALKTHROUGH = 15;
+  private static final int LAYOUT_FRAGMENTSINGLEAD = 15;
 
-  private static final int LAYOUT_LAYOUTFORMDETAIL = 16;
+  private static final int LAYOUT_FRAGMENTWALKTHROUGH = 16;
 
-  private static final int LAYOUT_LAYOUTHOME = 17;
+  private static final int LAYOUT_LAYOUTFORMDETAIL = 17;
 
-  private static final int LAYOUT_LAYOUTITEMGENERAL = 18;
+  private static final int LAYOUT_LAYOUTHOME = 18;
 
-  private static final int LAYOUT_LAYOUTITEMPOPULAR = 19;
+  private static final int LAYOUT_LAYOUTITEMGENERAL = 19;
 
-  private static final int LAYOUT_LAYOUTITEMSEARCH = 20;
+  private static final int LAYOUT_LAYOUTITEMPOPULAR = 20;
 
-  private static final int LAYOUT_LAYOUTSEARCH = 21;
+  private static final int LAYOUT_LAYOUTITEMSEARCH = 21;
 
-  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 22;
+  private static final int LAYOUT_LAYOUTSEARCH = 22;
 
-  private static final int LAYOUT_LAYOUTUSERPROFILE = 23;
+  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 23;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(23);
+  private static final int LAYOUT_LAYOUTUSERPROFILE = 24;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(24);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_edit_profile, LAYOUT_ACTIVITYEDITPROFILE);
@@ -103,6 +106,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_login, LAYOUT_FRAGMENTLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_sign_up, LAYOUT_FRAGMENTSIGNUP);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_single_ad, LAYOUT_FRAGMENTSINGLEAD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_walk_through, LAYOUT_FRAGMENTWALKTHROUGH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_form_detail, LAYOUT_LAYOUTFORMDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.layout_home, LAYOUT_LAYOUTHOME);
@@ -206,6 +210,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentSignUpBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_sign_up is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTSINGLEAD: {
+          if ("layout/fragment_single_ad_0".equals(tag)) {
+            return new FragmentSingleAdBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_single_ad is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTWALKTHROUGH: {
           if ("layout/fragment_walk_through_0".equals(tag)) {
@@ -314,7 +324,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(23);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(24);
 
     static {
       sKeys.put("layout/activity_edit_profile_0", com.example.successsynergyapp.R.layout.activity_edit_profile);
@@ -331,6 +341,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_login_0", com.example.successsynergyapp.R.layout.fragment_login);
       sKeys.put("layout/fragment_profile_0", com.example.successsynergyapp.R.layout.fragment_profile);
       sKeys.put("layout/fragment_sign_up_0", com.example.successsynergyapp.R.layout.fragment_sign_up);
+      sKeys.put("layout/fragment_single_ad_0", com.example.successsynergyapp.R.layout.fragment_single_ad);
       sKeys.put("layout/fragment_walk_through_0", com.example.successsynergyapp.R.layout.fragment_walk_through);
       sKeys.put("layout/layout_form_detail_0", com.example.successsynergyapp.R.layout.layout_form_detail);
       sKeys.put("layout/layout_home_0", com.example.successsynergyapp.R.layout.layout_home);
