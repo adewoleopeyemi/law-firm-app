@@ -11,6 +11,7 @@ import com.example.successsynergyapp.databinding.ActivityLoginBindingImpl;
 import com.example.successsynergyapp.databinding.ActivityMainBindingImpl;
 import com.example.successsynergyapp.databinding.ActivityUserFormBindingImpl;
 import com.example.successsynergyapp.databinding.ActivityUserTypeBindingImpl;
+import com.example.successsynergyapp.databinding.ActivityViewFormBindingImpl;
 import com.example.successsynergyapp.databinding.ActivityWalkThroughBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentAccountDetails2BindingImpl;
 import com.example.successsynergyapp.databinding.FragmentAccountDetails3BindingImpl;
@@ -18,6 +19,7 @@ import com.example.successsynergyapp.databinding.FragmentAccountDetailsBindingIm
 import com.example.successsynergyapp.databinding.FragmentFormBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentIndividualAllBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentLoginBindingImpl;
+import com.example.successsynergyapp.databinding.FragmentNotificationBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentProfileBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentSignUpBindingImpl;
 import com.example.successsynergyapp.databinding.FragmentSingleAdBindingImpl;
@@ -51,45 +53,49 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYUSERTYPE = 5;
 
-  private static final int LAYOUT_ACTIVITYWALKTHROUGH = 6;
+  private static final int LAYOUT_ACTIVITYVIEWFORM = 6;
 
-  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS = 7;
+  private static final int LAYOUT_ACTIVITYWALKTHROUGH = 7;
 
-  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS2 = 8;
+  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS = 8;
 
-  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS3 = 9;
+  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS2 = 9;
 
-  private static final int LAYOUT_FRAGMENTFORM = 10;
+  private static final int LAYOUT_FRAGMENTACCOUNTDETAILS3 = 10;
 
-  private static final int LAYOUT_FRAGMENTINDIVIDUALALL = 11;
+  private static final int LAYOUT_FRAGMENTFORM = 11;
 
-  private static final int LAYOUT_FRAGMENTLOGIN = 12;
+  private static final int LAYOUT_FRAGMENTINDIVIDUALALL = 12;
 
-  private static final int LAYOUT_FRAGMENTPROFILE = 13;
+  private static final int LAYOUT_FRAGMENTLOGIN = 13;
 
-  private static final int LAYOUT_FRAGMENTSIGNUP = 14;
+  private static final int LAYOUT_FRAGMENTNOTIFICATION = 14;
 
-  private static final int LAYOUT_FRAGMENTSINGLEAD = 15;
+  private static final int LAYOUT_FRAGMENTPROFILE = 15;
 
-  private static final int LAYOUT_FRAGMENTWALKTHROUGH = 16;
+  private static final int LAYOUT_FRAGMENTSIGNUP = 16;
 
-  private static final int LAYOUT_LAYOUTFORMDETAIL = 17;
+  private static final int LAYOUT_FRAGMENTSINGLEAD = 17;
 
-  private static final int LAYOUT_LAYOUTHOME = 18;
+  private static final int LAYOUT_FRAGMENTWALKTHROUGH = 18;
 
-  private static final int LAYOUT_LAYOUTITEMGENERAL = 19;
+  private static final int LAYOUT_LAYOUTFORMDETAIL = 19;
 
-  private static final int LAYOUT_LAYOUTITEMPOPULAR = 20;
+  private static final int LAYOUT_LAYOUTHOME = 20;
 
-  private static final int LAYOUT_LAYOUTITEMSEARCH = 21;
+  private static final int LAYOUT_LAYOUTITEMGENERAL = 21;
 
-  private static final int LAYOUT_LAYOUTSEARCH = 22;
+  private static final int LAYOUT_LAYOUTITEMPOPULAR = 22;
 
-  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 23;
+  private static final int LAYOUT_LAYOUTITEMSEARCH = 23;
 
-  private static final int LAYOUT_LAYOUTUSERPROFILE = 24;
+  private static final int LAYOUT_LAYOUTSEARCH = 24;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(24);
+  private static final int LAYOUT_LAYOUTSINGLEFORMQUESTION = 25;
+
+  private static final int LAYOUT_LAYOUTUSERPROFILE = 26;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(26);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_edit_profile, LAYOUT_ACTIVITYEDITPROFILE);
@@ -97,6 +103,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_user_form, LAYOUT_ACTIVITYUSERFORM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_user_type, LAYOUT_ACTIVITYUSERTYPE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_view_form, LAYOUT_ACTIVITYVIEWFORM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.activity_walk_through, LAYOUT_ACTIVITYWALKTHROUGH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_account_details, LAYOUT_FRAGMENTACCOUNTDETAILS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_account_details2, LAYOUT_FRAGMENTACCOUNTDETAILS2);
@@ -104,6 +111,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_form, LAYOUT_FRAGMENTFORM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_individual_all, LAYOUT_FRAGMENTINDIVIDUALALL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_login, LAYOUT_FRAGMENTLOGIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_notification, LAYOUT_FRAGMENTNOTIFICATION);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_profile, LAYOUT_FRAGMENTPROFILE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_sign_up, LAYOUT_FRAGMENTSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.successsynergyapp.R.layout.fragment_single_ad, LAYOUT_FRAGMENTSINGLEAD);
@@ -157,6 +165,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_user_type is invalid. Received: " + tag);
         }
+        case  LAYOUT_ACTIVITYVIEWFORM: {
+          if ("layout/activity_view_form_0".equals(tag)) {
+            return new ActivityViewFormBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_view_form is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYWALKTHROUGH: {
           if ("layout/activity_walk_through_0".equals(tag)) {
             return new ActivityWalkThroughBindingImpl(component, view);
@@ -198,6 +212,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentLoginBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_login is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTNOTIFICATION: {
+          if ("layout/fragment_notification_0".equals(tag)) {
+            return new FragmentNotificationBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_notification is invalid. Received: " + tag);
         }
         case  LAYOUT_FRAGMENTPROFILE: {
           if ("layout/fragment_profile_0".equals(tag)) {
@@ -324,7 +344,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(24);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(26);
 
     static {
       sKeys.put("layout/activity_edit_profile_0", com.example.successsynergyapp.R.layout.activity_edit_profile);
@@ -332,6 +352,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_main_0", com.example.successsynergyapp.R.layout.activity_main);
       sKeys.put("layout/activity_user_form_0", com.example.successsynergyapp.R.layout.activity_user_form);
       sKeys.put("layout/activity_user_type_0", com.example.successsynergyapp.R.layout.activity_user_type);
+      sKeys.put("layout/activity_view_form_0", com.example.successsynergyapp.R.layout.activity_view_form);
       sKeys.put("layout/activity_walk_through_0", com.example.successsynergyapp.R.layout.activity_walk_through);
       sKeys.put("layout/fragment_account_details_0", com.example.successsynergyapp.R.layout.fragment_account_details);
       sKeys.put("layout/fragment_account_details2_0", com.example.successsynergyapp.R.layout.fragment_account_details2);
@@ -339,6 +360,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/fragment_form_0", com.example.successsynergyapp.R.layout.fragment_form);
       sKeys.put("layout/fragment_individual_all_0", com.example.successsynergyapp.R.layout.fragment_individual_all);
       sKeys.put("layout/fragment_login_0", com.example.successsynergyapp.R.layout.fragment_login);
+      sKeys.put("layout/fragment_notification_0", com.example.successsynergyapp.R.layout.fragment_notification);
       sKeys.put("layout/fragment_profile_0", com.example.successsynergyapp.R.layout.fragment_profile);
       sKeys.put("layout/fragment_sign_up_0", com.example.successsynergyapp.R.layout.fragment_sign_up);
       sKeys.put("layout/fragment_single_ad_0", com.example.successsynergyapp.R.layout.fragment_single_ad);

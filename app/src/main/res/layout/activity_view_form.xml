@@ -1,9 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".dashboard.form.ViewFormActivity">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--    <androidx.core.widget.NestedScrollView-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:overScrollMode="never">-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@drawable/t12_shadoe"
+                    android:padding="@dimen/t12_spacing_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:id="@+id/ivProfile"
+                        android:src="@drawable/theme3_ic_message"/>
+                    <LinearLayout
+                        android:layout_toStartOf="@id/tvCall"
+                        android:layout_marginStart="@dimen/t12_spacing_middle"
+                        android:layout_marginEnd="@dimen/t12_spacing_middle"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toEndOf="@id/ivProfile">
+
+                        <TextView
+                            style="@style/T12SettingHeading"
+                            android:id="@+id/tv_first_name"
+                            android:textAllCaps="false"
+                            android:padding="0dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_email"
+                            android:textColor="@color/t12_textColorSecondary"
+                            android:textSize="@dimen/t12_font_size_medium"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/tvCall"
+                        style="@style/Theme12MaterialButton"
+                        android:layout_marginStart="0dp"
+                        android:paddingStart="@dimen/t12_spacing_large"
+                        android:paddingEnd="@dimen/t12_spacing_large"
+                        android:paddingTop="@dimen/t12_spacing_standard"
+                        android:paddingBottom="@dimen/t12_spacing_standard"
+                        android:text="Review" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/t12_spacing_large"
+                    android:layout_marginBottom="@dimen/t12_spacing_large"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/t12_spacing_standard_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_budget"
+
+                        android:textColor="@color/t12_textColorPrimary"
+                        android:textSize="@dimen/t12_font_size_medium"
+                        android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                        android:drawablePadding="@dimen/t12_spacing_standard"/>
+                    <!--                <ImageView-->
+                    <!--                    android:layout_marginEnd="@dimen/t12_spacing_standard_new"-->
+                    <!--                    android:layout_width="@dimen/t12_spacing_standard"-->
+                    <!--                    android:layout_height="@dimen/t12_spacing_standard"-->
+                    <!--                    android:src="@drawable/t12_bg_black_dot"-->
+                    <!--                    android:layout_gravity="center_vertical"/>-->
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/status"
+                        android:textColor="@color/t12_textColorPrimary"
+                        android:textSize="@dimen/t12_font_size_medium"
+                        android:drawableStart="@drawable/ic_baseline_warning_24"
+                        android:drawablePadding="@dimen/t12_spacing_standard"
+                        />
+                    <!--                <ImageView-->
+                    <!--                    android:layout_marginEnd="@dimen/t12_spacing_standard_new"-->
+                    <!--                    android:layout_width="@dimen/t12_spacing_standard"-->
+                    <!--                    android:layout_height="@dimen/t12_spacing_standard"-->
+                    <!--                    android:src="@drawable/t12_bg_black_dot"-->
+                    <!--                    android:layout_gravity="center_vertical"/>-->
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_location"
+                        android:textColor="@color/t12_textColorPrimary"
+                        android:textSize="@dimen/t12_font_size_medium"
+                        android:maxEms="25"
+                        android:drawableStart="@drawable/t12_ic_home"
+                        android:drawablePadding="@dimen/t12_spacing_standard"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/t12_view_color"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/t12_spacing_standard_new"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                    android:layout_marginStart="@dimen/t12_spacing_standard_new"
+                    android:layout_marginEnd="@dimen/t12_spacing_standard_new">
+
+                    <TextView
+                        style="@style/T12Heading"
+                        android:textAllCaps="true"
+                        android:text="@string/t12_lbl_address"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/t12_spacing_standard"
+                        style="@style/T12SubHeading"
+                        android:id="@+id/tv_full_location"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                        style="@style/T12Heading"
+                        android:textAllCaps="true"
+                        android:text="@string/t12_lbl_description"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/t12_spacing_standard"
+                        style="@style/T12SubHeading"
+                        android:id="@+id/tv_bullet_point"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/t12_spacing_standard_new"
+                        style="@style/T12Heading"
+                        android:textAllCaps="true"
+                        android:text="@string/t12_lbl_types_of_properties"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/t12_spacing_standard"
+                        style="@style/T12SubHeading"
+                        android:id="@+id/tv_type_of_sevice"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/btn_accept"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:text="Accept"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/basic"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/t12_colorPrimary"/>
+
+                    <Button
+                        android:id="@+id/btn_reject"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:text="Reject"
+                        android:fontFamily="@font/basic"
+                        android:layout_marginLeft="20dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Theme7_color_red"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--    </androidx.core.widget.NestedScrollView>-->
+    </LinearLayout>
+</layout>

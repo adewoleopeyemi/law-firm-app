@@ -2674,10 +2674,13 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_access_time
 drawable ic_baseline_add_24
+drawable ic_baseline_attach_money_24
 drawable ic_baseline_check_24
 drawable ic_baseline_clear_24
 drawable ic_baseline_done_outline_24
 drawable ic_baseline_more_vert_24
+drawable ic_baseline_notifications_24
+drawable ic_baseline_warning_24
 drawable ic_clock_black_24dp
 drawable ic_compass
 drawable ic_keyboard_black_24dp
@@ -3071,8 +3074,10 @@ id iv
 id ivBack
 id ivBackgroundImage
 id ivClose
+id ivHotel
 id ivIcon
 id ivNext
+id ivProfile
 id ivUserProfile
 id iv_Verified
 id iv_back
@@ -3176,6 +3181,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notifications_rv
 id nowrap
 id off
 id on
@@ -3296,6 +3302,7 @@ id startVertical
 id state_justification
 id staticLayout
 id staticPostLayout
+id status
 id status_bar_latest_event_content
 id stop
 id stretch
@@ -3356,6 +3363,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCall
 id tvEditCoverPhoto
 id tvHeading
 id tvLblResult
@@ -3384,12 +3392,14 @@ id tv_description
 id tv_edit_profile
 id tv_email
 id tv_first_name
+id tv_full_location
 id tv_general
 id tv_last_name
 id tv_last_search_category
 id tv_last_search_name
 id tv_location
 id tv_name
+id tv_phone_number
 id tv_popular
 id tv_rating
 id tv_search
@@ -3523,10 +3533,12 @@ layout fragment_form
 layout fragment_home
 layout fragment_individual_all
 layout fragment_login
+layout fragment_notification
 layout fragment_profile
 layout fragment_sign_up
 layout fragment_single_ad
 layout fragment_walk_through
+layout item_notification
 layout layout_form_detail
 layout layout_home
 layout layout_item_general
@@ -3624,6 +3636,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw law_loading
+raw new_message_icon
 raw real_no_users
 raw success_synergy_no_data_found
 string _1

@@ -36,6 +36,10 @@
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_form_detail.xml"
     },
     {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_view_form.xml",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/activity_view_form.xml"
+    },
+    {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_item_popular.xml",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/layout_item_popular.xml"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
         "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notification.xml",
+        "source": "/Users/dareoni/Downloads/SuccessSynergyApp/app/src/main/res/layout/fragment_notification.xml"
     },
     {
         "merged": "/Users/dareoni/Downloads/SuccessSynergyApp/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_account_details.xml",

@@ -5,6 +5,39 @@ import java.io.Serializable;
 public class ModelForm implements Serializable {
     String first_name, surname, Location, State, email_address, phone_number;
     String type_of_service, budget, street, bullet_point, willing_to_pay, ready_to_deposit, intend_to_pay, agreed, status, uid;
+    Boolean serviceProviderSgreed, clientAgreed, adminApproved;
+
+    public Boolean getServiceProviderSgreed() {
+        return serviceProviderSgreed;
+    }
+
+    public void setServiceProviderSgreed(Boolean serviceProviderSgreed) {
+        this.serviceProviderSgreed = serviceProviderSgreed;
+    }
+
+    public Boolean getClientAgreed() {
+        return clientAgreed;
+    }
+
+    public void setClientAgreed(Boolean clientAgreed) {
+        this.clientAgreed = clientAgreed;
+    }
+
+    public Boolean getAdminApproved() {
+        return adminApproved;
+    }
+
+    public void setAdminApproved(Boolean adminApproved) {
+        this.adminApproved = adminApproved;
+    }
+
+    public boolean isIntend_to_balance() {
+        return intend_to_balance;
+    }
+
+    public void setIntend_to_balance(boolean intend_to_balance) {
+        this.intend_to_balance = intend_to_balance;
+    }
 
     public String getUid() {
         return uid;

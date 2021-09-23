@@ -123,7 +123,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem 
     <string name="t12_lbl_simple_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
     <string name="t12_lbl_address">Address</string>
     <string name="t12_lbl_description">Description</string>
-    <string name="t12_lbl_types_of_properties">Types of properties</string>
+    <string name="t12_lbl_types_of_properties">Types of service</string>
     <string name="t12_lbl_house">House</string>
     <string name="t12_lbl_storeys">storeys</string>
     <string name="t12_lbl_photos">photos</string>

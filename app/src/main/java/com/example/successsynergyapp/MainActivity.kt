@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.successsynergyapp.auth.Theme6BaseActivity
 import com.example.successsynergyapp.dashboard.form.FormFragment
 import com.example.successsynergyapp.dashboard.home.HomeFragment
+import com.example.successsynergyapp.dashboard.notification.NotificationFragment
 import com.example.successsynergyapp.dashboard.profile.ProfileFragment
 import com.example.successsynergyapp.databinding.ActivityMainBinding
 import com.example.successsynergyapp.extensions.addFragment
@@ -87,8 +88,11 @@ class MainActivity : Theme6BaseActivity() {
                 profileFragment.arguments = bundle
                 replaceFragment(profileFragment, R.id.frameLayout)
             }
-            else if (it.id == ID_MESSAGE){
+            else if (it.id == ID_MESSAGE && !forWhat.equals("ServiceProvider")){
                 replaceFragment(FormFragment(), R.id.frameLayout)
+            }
+            else{
+                replaceFragment(NotificationFragment(), R.id.frameLayout)
             }
             val name = when (it.id) {
                 ID_HOME -> "HOME"

@@ -30,7 +30,7 @@ public class MyFireBaseMessagingService extends FirebaseMessagingService {
         userType = remoteMessage.getData().get("UserType");
         bulletPoint = remoteMessage.getData().get("BulletPoint");
 
-        Log.d("Message", "onMessageReceived: "+id + " UserType "+userType);
+        Log.d("Message", "onMessageReceived: "+id + " UserType "+bulletPoint);
         if (userType.equals("ServiceProvider")){
             notificationIntent = new Intent(getApplicationContext(), ViewFormActivity.class);
             notificationIntent.putExtra("for", userType);

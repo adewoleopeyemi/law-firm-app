@@ -1,5 +1,7 @@
 com/example/successsynergyapp/databinding/FragmentWalkThroughBindingImpl.java
  com.example.successsynergyapp.databinding.FragmentWalkThroughBindingImpl
+com/example/successsynergyapp/databinding/FragmentNotificationBindingImpl.java
+ com.example.successsynergyapp.databinding.FragmentNotificationBindingImpl
 com/example/successsynergyapp/databinding/FragmentAccountDetails3BindingImpl.java
  com.example.successsynergyapp.databinding.FragmentAccountDetails3BindingImpl
 com/example/successsynergyapp/notification/MyFirebaseIdService.java
@@ -18,6 +20,8 @@ androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
 com/example/successsynergyapp/databinding/LayoutUserProfileBindingImpl.java
  com.example.successsynergyapp.databinding.LayoutUserProfileBindingImpl
+com/example/successsynergyapp/databinding/FragmentNotificationBinding.java
+ com.example.successsynergyapp.databinding.FragmentNotificationBinding
 com/example/successsynergyapp/databinding/FragmentWalkThroughBinding.java
  com.example.successsynergyapp.databinding.FragmentWalkThroughBinding
 com/example/successsynergyapp/databinding/ActivityMainBindingImpl.java
@@ -28,6 +32,8 @@ com/example/successsynergyapp/databinding/LayoutFormDetailBinding.java
  com.example.successsynergyapp.databinding.LayoutFormDetailBinding
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
+com/example/successsynergyapp/databinding/ActivityViewFormBinding.java
+ com.example.successsynergyapp.databinding.ActivityViewFormBinding
 com/example/successsynergyapp/notification/APIService.java
  com.example.successsynergyapp.notification.APIService
 com/example/successsynergyapp/dashboard/home/search/SearchActivity.java
@@ -77,6 +83,9 @@ com/example/successsynergyapp/databinding/FragmentAccountDetails2Binding.java
 com/example/successsynergyapp/dashboard/home/adpaters/AdapterItemGeneral.java
  com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral
  com.example.successsynergyapp.dashboard.home.adpaters.AdapterItemGeneral$Holder
+com/example/successsynergyapp/dashboard/notification/NotificationFragment.java
+ com.example.successsynergyapp.dashboard.notification.NotificationFragment
+ com.example.successsynergyapp.dashboard.notification.NotificationFragment$1
 com/example/successsynergyapp/databinding/FragmentSingleAdBindingImpl.java
  com.example.successsynergyapp.databinding.FragmentSingleAdBindingImpl
 com/example/successsynergyapp/auth/AccountDetails2Fragment.java
@@ -108,6 +117,8 @@ com/example/successsynergyapp/databinding/ActivityEditProfileBinding.java
  com.example.successsynergyapp.databinding.ActivityEditProfileBinding
 com/example/successsynergyapp/databinding/FragmentSingleAdBinding.java
  com.example.successsynergyapp.databinding.FragmentSingleAdBinding
+com/example/successsynergyapp/databinding/ActivityViewFormBindingImpl.java
+ com.example.successsynergyapp.databinding.ActivityViewFormBindingImpl
 com/example/successsynergyapp/databinding/FragmentIndividualAllBindingImpl.java
  com.example.successsynergyapp.databinding.FragmentIndividualAllBindingImpl
 com/example/successsynergyapp/databinding/LayoutItemGeneralBindingImpl.java
@@ -145,6 +156,10 @@ com/example/successsynergyapp/databinding/FragmentFormBinding.java
  com.example.successsynergyapp.databinding.FragmentFormBinding
 com/example/successsynergyapp/databinding/ActivityLoginBinding.java
  com.example.successsynergyapp.databinding.ActivityLoginBinding
+com/example/successsynergyapp/dashboard/notification/adapters/AdapterNotification.java
+ com.example.successsynergyapp.dashboard.notification.adapters.AdapterNotification
+ com.example.successsynergyapp.dashboard.notification.adapters.AdapterNotification$1
+ com.example.successsynergyapp.dashboard.notification.adapters.AdapterNotification$holder
 com/example/successsynergyapp/databinding/LayoutHomeBindingImpl.java
  com.example.successsynergyapp.databinding.LayoutHomeBindingImpl
 com/example/successsynergyapp/model/ModelAds.java
@@ -153,6 +168,7 @@ com/example/successsynergyapp/databinding/FragmentAccountDetails2BindingImpl.jav
  com.example.successsynergyapp.databinding.FragmentAccountDetails2BindingImpl
 com/example/successsynergyapp/dashboard/form/ViewFormActivity.java
  com.example.successsynergyapp.dashboard.form.ViewFormActivity
+ com.example.successsynergyapp.dashboard.form.ViewFormActivity$1
 com/example/successsynergyapp/auth/AuthActivity.java
  com.example.successsynergyapp.auth.AuthActivity
 com/example/successsynergyapp/databinding/ActivityEditProfileBindingImpl.java
